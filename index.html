@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+
+  <title>Diving bell</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <!-- <div class="nav-user__logo">
+        <img class="nav-user__logo-img" src="img/logo.svg" alt="Full logo"  height="150">
+      </div> -->
+
+      <div class="header__logo">
+        <img class="header__logo-img" src="img/logo_clear.svg" alt="Full logo" height="150">
+      </div>
+
+      <div class="nav-user">
+
+
+        <ul class="nav-user__items">
+          <li class="nav-user__item nav-user__item--search">
+            Search
+          </li>
+          <li class="nav-user__item nav-user__item--logo">
+            Logo
+          </li>
+          <li class="nav-user__item nav-user__item--user">
+            User
+          </li>
+          <li class="nav-user__item nav-user__item--cart">
+            Cart
+          </li>
+        </ul>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__items main-nav__items-home">
+            Home
+          </li>
+          <li class="main-nav__items main-nav__items-Catalog">
+            <a href="catalog.html" class="main-nav__atalog">
+              Catalog
+            </a>
+          </li>
+          <li class="main-nav__items main-nav__items-shop">
+            <a href="product.html" class="main-nav__atalog">
+              Product
+            </a>
+          </li>
+          <ul class="main-nav__subnav subnav__items">
+            <li class="subnav__item">
+              Masks
+            </li>
+            <li class="subnav__item">
+              Fins
+            </li>
+            <li class="subnav__item">
+              Snorkels
+            </li>
+          </ul>
+          <li class="main-nav__items main-nav__items-contact">
+            <a href="contact.html" class="main-nav__login">
+              Blog
+            </a>
+          </li>
+          <li class="main-nav__items main-nav__items-contact">
+            <a href="contact.html" class="main-nav__login">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+
+      <div class="main-slider">
+        <input type="radio" class="main-slider__switch" name="switch" id="btn1">
+        <input type="radio" class="main-slider__switch" name="switch" id="btn2">
+        <input type="radio" class="main-slider__switch" name="switch" id="btn3">
+        <input type="radio" class="main-slider__switch" name="switch" id="btn4">
+
+        <div class="switch">
+          <label for="btn1"></label>
+          <label for="btn2"></label>
+          <label for="btn3"></label>
+          <label for="btn4"></label>
+        </div>
+        <div class="main-slider__wrapper">
+          <ul class="main-slider__items">
+            <li class="main-slider__item main-slider__item-1">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x"> -->
+
+                <!-- <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x"> -->
+                <img class="main-slider__img" src="img/fon_1@1x.jpg" srcset="img/fon_1@2x.jpg 2x"
+                  alt="Фон 1">
+              </picture>
+            </li>
+            <li class="main-slider__item main-slider__item-2">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x"> -->
+
+                <!-- <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x"> -->
+                <img class="main-slider__img" src="img/fon_2@1x.jpg" srcset="img/fon_2@2x.jpg 2x"
+                  width="100" alt="Фон 2">
+              </picture>
+            </li>
+            <li class="main-slider__item  main-slider__item-3">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x"> -->
+
+                <!-- <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x"> -->
+                <img class="main-slider__img" src="img/fon_3@1x.jpg" srcset="img/fon_3@2x.jpg 2x"
+                  width="100" alt="Фон 3">
+              </picture>
+            </li>
+            <li class="main-slider__item  main-slider__item-4">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x"> -->
+
+                <!-- <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x"> -->
+                <img class="main-slider__img" src="img/fon_4@1x.jpg" srcset="img/fon_4@2x.jpg 2x"
+                  width="100" alt="Фон 4">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="kkk">fae9gnag
+        hagh[r[
+        ha90rge9
+        hg0r[ae]]]
+      </div> -->
+
+      <section class="category">
+        <ul class="category__items">
+          <li class="category__item">
+            <a class="category__link">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                <img class="category__img" src="img/fins_fon@1x.jpg" srcset="img/fon_4@2x.jpg 2x"
+                  width="100" alt="Фон 4">
+              </picture>
+            </a>
+            <div class="category__name">
+              Fins
+            </div>
+          </li>
+          <li class="category__item">
+            <a class="category__link">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                <img class="category__img" src="img/mask_fon@2x.jpg" srcset="img/mask_fon@2x.jpg 2x"
+                  width="100" alt="Фон 4">
+              </picture>
+            </a>
+            <div class="category__name">
+              Masks
+            </div>
+          </li>
+          <li class="category__item">
+            <a class="category__link">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                <img class="category__img" src="img/snorkels_fon@1x.jpg"
+                  srcset="img/snorkels_fon@2x.jpg 2x" width="100" alt="Фон 4">
+              </picture>
+            </a>
+            <div class="category__name">
+              Snorkels
+            </div>
+          </li>
+          <li class="category__item">
+            <a class="category__link">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                <img class="category__img" src="img/fins_fon@1x.jpg" srcset="img/fon_4@2x.jpg 2x"
+                  width="100" alt="Фон 4">
+              </picture>
+            </a>
+            <div class="category__name">
+              Fins
+            </div>
+          </li>
+          <li class="category__item">
+            <a class="category__link">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                <img class="category__img" src="img/mask_fon@2x.jpg" srcset="img/mask_fon@2x.jpg 2x"
+                  width="100" alt="Фон 4">
+              </picture>
+            </a>
+            <div class="category__name">
+              Masks
+            </div>
+          </li>
+          <li class="category__item">
+            <a class="category__link">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                <img class="category__img" src="img/snorkels_fon@1x.jpg"
+                  srcset="img/snorkels_fon@2x.jpg 2x" width="100" alt="Фон 4">
+              </picture>
+            </a>
+            <div class="category__name">
+              Snorkels
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="top-sales">
+        <div class="top-sales__wrapper">
+          <div class="title-main">
+            <img class="title-main__wave title-main__wave--left" src="img/svg/wave.svg" alt="Wave">
+            <h2 class="title-main__header">
+              Top sales
+            </h2>
+            <img class="title-main__wave title-main__wave--right" src="img/svg/wave.svg" alt="Wave">
+          </div>
+
+          <ul class="top-sales__items">
+            <li class="top-sales__item card">
+              <div class="top-sales__pic card__pic">
+              <a class="card__link">
+                <picture>
+                  <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                  <img class="top-sales__img card__img" src="img/fins/Vole Race.jpg"
+                    srcset="img/fins/Vole Race.jpg" width="100" alt="Фон 4">
+                </picture>
+              </a>
+            </div>
+            <div class="card__wrap-text">
+              <div class="top-sales__name card__name">
+                Vole Race
+              </div>
+              <div class="top-sales__brand card__brand">
+                Scubapro
+              </div>
+              <div class="top-sales__price card__price">
+                45.00$
+              </div>
+              <div class="top-sales__heart card__heart">
+                <div class="card__heart1"></div>
+                <div class="card__heart2"></div>
+              </div>
+              <div class="top-sales__stars card__stars"></div>
+              <div class="add-to-cart">
+                <a href="#" class="cart-button">В корзину</a>
+              </div>
+            </div>
+            </li>
+            <li class="top-sales__item card">
+              <div class="top-sales__pic card__pic">
+              <a class="card__link">
+                <picture>
+                  <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                  <img class="top-sales__img card__img" src="img/snorkels/Spectra_clear_white.jpg"
+                    srcset="img/snorkels/Spectra_clear_white.jpg" width="100" alt="Фон 4">
+                </picture>
+              </a>
+              </div>
+              <div class="card__wrap-text">
+              <div class="top-sales__name card__name">
+                Vole Race
+              </div>
+              <div class="top-sales__brand card__brand">
+                Scubapro
+              </div>
+              <div class="top-sales__price card__price">
+                45.00$
+              </div>
+              <div class="top-sales__heart card__heart">
+                <div class="card__heart1"></div>
+                <div class="card__heart2"></div>
+              </div>
+              <div class="top-sales__stars card__stars"></div>
+              <div class="add-to-cart">
+                <a href="#" class="cart-button">В корзину</a>
+              </div>
+              </div>
+            </li>
+            <li class="top-sales__item card">
+              <div class="top-sales__pic card__pic">
+              <a class="card__link">
+                <picture>
+                  <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                  <img class="top-sales__img card__img" src="img/fins/Vole Race.jpg"
+                    srcset="img/fins/Vole Race.jpg" width="100" alt="Фон 4">
+                </picture>
+              </a>
+              </div>
+              <div class="card__wrap-text">
+              <div class="top-sales__name card__name">
+                Vole Race
+              </div>
+              <div class="top-sales__brand card__brand">
+                Scubapro
+              </div>
+              <div class="top-sales__price card__price">
+                45.00$
+              </div>
+              <div class="top-sales__heart card__heart">
+                <div class="card__heart1"></div>
+                <div class="card__heart2"></div>
+              </div>
+              <div class="top-sales__stars card__stars"></div>
+              <div class="add-to-cart">
+                <a href="#" class="cart-button">В корзину</a>
+              </div>
+              </div>
+            </li>
+            <li class="top-sales__item card">
+              <div class="top-sales__pic card__pic">
+              <a class="card__link">
+                <picture>
+                  <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                  <img class="top-sales__img card__img" src="img/fins/Vole Race.jpg"
+                    srcset="img/fins/Vole Race.jpg" width="100" alt="Фон 4">
+                </picture>
+              </a>
+              </div>
+              <div class="card__wrap-text">
+              <div class="top-sales__name card__name">
+                Vole Race
+              </div>
+              <div class="top-sales__brand card__brand">
+                Scubapro
+              </div>
+              <div class="top-sales__price card__price">
+                45.00$
+              </div>
+              <div class="top-sales__heart card__heart">
+                <div class="card__heart1"></div>
+                <div class="card__heart2"></div>
+              </div>
+              <div class="top-sales__stars card__stars"></div>
+              <div class="add-to-cart">
+                <a href="#" class="cart-button">В корзину</a>
+              </div>
+              </div>
+            </li>
+            <li class="top-sales__item card">
+            <div class="top-sales__pic card__pic">
+              <a class="card__link">
+                <picture>
+                  <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                  <img class="top-sales__img card__img" src="img/fins/Vole Race.jpg"
+                    srcset="img/fins/Vole Race.jpg" width="100" alt="Фон 4">
+                </picture>
+              </a>
+            </div>
+            <div class="card__wrap-text">
+              <div class="top-sales__name card__name">
+                Vole Race
+              </div>
+              <div class="top-sales__brand card__brand">
+                Scubapro
+              </div>
+              <div class="top-sales__price card__price">
+                45.00$
+              </div>
+              <div class="top-sales__heart card__heart">
+                <div class="card__heart1"></div>
+                <div class="card__heart2"></div>
+              </div>
+              <div class="top-sales__stars card__stars"></div>
+              <div class="add-to-cart">
+                <a href="#" class="cart-button">В корзину</a>
+              </div>
+            </div>
+            </li>
+            <li class="top-sales__item card">
+              <div class="top-sales__pic card__pic">
+              <a class="card__link">
+                <picture>
+                  <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                  <img class="top-sales__img card__img" src="img/fins/Vole Race.jpg"
+                    srcset="img/fins/Vole Race.jpg" width="100" alt="Фон 4">
+                </picture>
+              </a>
+              </div>
+              <div class="card__wrap-text">
+              <div class="top-sales__name card__name">
+                Vole Race
+              </div>
+              <div class="top-sales__brand card__brand">
+                Scubapro
+              </div>
+              <div class="top-sales__price card__price">
+                45.00$
+              </div>
+              <div class="top-sales__heart card__heart">
+                <div class="card__heart1"></div>
+                <div class="card__heart2"></div>
+              </div>
+              <div class="top-sales__stars card__stars"></div>
+              <div class="add-to-cart">
+                <a href="#" class="cart-button">В корзину</a>
+              </div>
+              </div>
+            </li>
+            <li class="top-sales__item card">
+              <div class="top-sales__pic card__pic">
+              <a class="card__link">
+                <picture>
+                  <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                  <img class="top-sales__img card__img" src="img/fins/Vole Race.jpg"
+                    srcset="img/fins/Vole Race.jpg" width="100" alt="Фон 4">
+                </picture>
+              </a>
+              </div>
+              <div class="card__wrap-text">
+              <div class="top-sales__name card__name">
+                Vole Race
+              </div>
+              <div class="top-sales__brand card__brand">
+                Scubapro
+              </div>
+              <div class="top-sales__price card__price">
+                45.00$
+              </div>
+              <div class="top-sales__heart card__heart">
+                <div class="card__heart1"></div>
+                <div class="card__heart2"></div>
+              </div>
+              <div class="top-sales__stars card__stars"></div>
+              <div class="add-to-cart">
+                <a href="#" class="cart-button">В корзину</a>
+              </div>
+            </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="new-products">
+        <div class="title">
+          <img src="img/svg/wave.svg" alt="Wave">
+          <h2 class="top-sales__header">
+            New products
+          </h2>
+          <img src="img/svg/wave.svg" alt="Wave">
+        </div>
+
+
+        <ul class="new-products__items">
+          <li class="new-products__item">
+            <a class="category__link">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                <img class="category__link__img" src="img/fins/Vole Race.jpg"
+                  srcset="img/fins/Vole Race.jpg" width="100" alt="Фон 4">
+              </picture>
+            </a>
+            <div class="new-products__name">
+              Vole Race
+            </div>
+            <div class="new-products__brand">
+              Scubapro
+            </div>
+            <div class="new-products__price">
+              45.00$
+            </div>
+
+          </li>
+          <li class="new-products__item">
+            <a class="category__link">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                <img class="category__link__img" src="img/snorkels/Apnea.jpg"
+                  srcset="img/snorkels/Apnea.jpg" width="100" alt="Фон 4">
+              </picture>
+            </a>
+            <div class="new-products__name">
+              Vole Race
+            </div>
+            <div class="new-products__brand">
+              Scubapro
+            </div>
+            <div class="new-products__price">
+              45.00$
+            </div>
+          </li>
+          <li class="new-products__item">
+            <a class="category__link">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                <img class="category__link__img" src="img/fins/Vole Race.jpg"
+                  srcset="img/fins/Vole Race.jpg" width="100" alt="Фон 4">
+              </picture>
+            </a>
+            <div class="new-products__name">
+              Vole Race
+            </div>
+            <div class="new-products__brand">
+              Scubapro
+            </div>
+            <div class="new-products__price">
+              45.00$
+            </div>
+          </li>
+          <li class="new-products__item">
+            <a class="category__link">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                <img class="category__link__img" src="img/snorkels/Apnea.jpg"
+                  srcset="img/snorkels/Apnea.jpg" width="100" alt="Фон 4">
+              </picture>
+            </a>
+            <div class="new-products__name">
+              Vole Race
+            </div>
+            <div class="new-products__brand">
+              Scubapro
+            </div>
+            <div class="new-products__price">
+              45.00$
+            </div>
+          </li>
+          <li class="new-products__item">
+            <a class="category__link">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                <img class="category__link__img" src="img/masks/Tiara II.jpg"
+                  srcset="img/masks/Tiara II.jpg" width="100" alt="Фон 4">
+              </picture>
+            </a>
+            <div class="new-products__name">
+              Vole Race
+            </div>
+            <div class="new-products__brand">
+              Scubapro
+            </div>
+            <div class="new-products__price">
+              45.00$
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <div class="video__bg">
+          <video class="video__bg__content" alt="Video background" autoplay muted loop>
+            <source src="img/Scuba Diving - 699.mp4" type="video/mp4">
+            <source src="img/video.webm" type="video/webm">
+            Your browser is not supported video!
+          </video>
+        </div>
+        <div class="section-stories__header u-center-text u-margin-bottom-big">
+          <h2 class=" heading-secondary">
+            Diving make people genuinely happy
+          </h2>
+        </div>
+      </section>
+      <section class="kits" id="section-kits">
+        <div class="title">
+          <img src="img/svg/wave.svg" alt="Wave">
+          <h2 class="top-sales__header">
+            Special order
+          </h2>
+          <img src="img/svg/wave.svg" alt="Wave">
+        </div>
+
+        <div class="kits__items">
+          <div class="kits__item">
+            <div class="kits__card">
+              <div class="kits__side kits__side--front kits__side--front-1">
+                <div class="kits__picture kits__picture--1">
+                  &nbsp;
+                </div>
+                <h4 class="kits__heading">
+                  <span class="kits__heading-span kits__heading-span--1">
+                    Kit for beginners
+                  </span>
+                </h4>
+                <div class="kits__details">
+                  <ul class="kits__details-items">
+                    <li class="kits__details-item">Mask "Fusion"</li>
+                    <li class="kits__details-item">Fins "Tiara Pro"</li>
+                    <li class="kits__details-item">Snorkels "Jet"</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="kits__side kits__side--back kits__side--back-1">
+                <div class="kits__cta">
+                  <div class="kits__price-box">
+                    <div class="kits__price-only">
+                      only
+                    </div>
+                    <div class="kits__price-value">
+                      $297
+                    </div>
+                    <a href="#popup" class="btn btn--white">Book now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="kits__item">
+            <div class="kits__kits">
+              <div class="kits__side kits__side--front kits__side--front-2">
+                <div class="kits__picture kits__picture--2">
+                  &nbsp;
+                </div>
+                <h4 class="kits__heading">
+                  <span class="kits__heading-span kits__heading-span--2">
+                    Kit for advanced
+                  </span>
+                </h4>
+                <div class="kits__details">
+                  <ul class="kits__details-items">
+                    <li class="kits__details-item">Mask "Hero"</li>
+                    <li class="kits__details-item">Fins "Jet Sport Fin"</li>
+                    <li class="kits__details-item">Snorkels "Activa Tubair"</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="kits__side kits__side--back kits__side--back-2">
+                <div class="kits__cta">
+                  <div class="kits__price-box">
+                    <div class="kits__price-only">
+                      only
+                    </div>
+                    <div class="kits__price-value">
+                      $497
+                    </div>
+                    <a href="#popup" class="btn btn--white">Book now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="kits__item">
+            <div class="kits__kits">
+              <div class="kits__side kits__side--front kits__side--front-3">
+                <div class="kits__picture kits__picture--3">
+                  &nbsp;
+                </div>
+                <h4 class="kits__heading">
+                  <span class="kits__heading-span kits__heading-span--3">
+                    Kit for professionals'
+                  </span>
+                </h4>
+                <div class="kits__details">
+                  <ul class="kits__details-items">
+                    <li class="kits__details-item">Mask "Frameless Gorilla"</li>
+                    <li class="kits__details-item">Fins "Twin Jet"</li>
+                    <li class="kits__details-item">Snorkels "Spectra Dry"</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="kits__side kits__side--back kits__side--back-3">
+                <div class="kits__cta">
+                  <div class="kits__price-box">
+                    <div class="kits__price-only">
+                      only
+                    </div>
+                    <div class="kits__price-value">
+                      $897
+                    </div>
+                    <a href="#popup" class="btn btn--white">Book now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="wave1">
+        jagjrep order
+      </div>
+
+
+
+    </main>
+    <footer class="footer">
+      <div class="footer__logo-box">
+
+        <picture class="footer__logo">
+          <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+            media="(max-width: 37.5em)">
+          <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo"
+            src="img/logo-green-2x.png">
+        </picture>
+        <!-- <img class="footer__logo" src="img/logo-green-2x.png" alt="Full logo"> -->
+      </div>
+      <div class="footer__wrapper">
+
+        <div class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                Company
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                Contact us
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                Carrers
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                Privacy
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                Terms
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_social">
+          <ul>
+            <li class="facebook">
+              <a class="social_button" href="#">
+                <span class="visually_hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="kontakt">
+              <a class="social_button" href="#">
+                <span class="visually_hidden">Контакт</span>
+              </a>
+            </li>
+            <li class="twitter">
+              <a class="social_button" href="#">
+                <span class="visually_hidden">Твиттер</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__text">
+          <p class="footer__copyright">
+            Learning course. Student
+            <a href="" class="footer__link">
+              Olga Ventsel.
+            </a>
+            Course name:
+            <a href="" class="footer__link">
+              "Advanced CSS and SASS".
+            </a>
+            Copyright &copy;
+          </p>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+
+</body>
+
+</html>

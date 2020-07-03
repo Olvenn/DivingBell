@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="fonts/fa/css/font-awesome.min.css">
+
+    <title>Diving bell</title>
+</head>
+
+<body class="container">
+    <div style="display: none">
+        <include src="img/sprite.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        </include>
+    </div>
+
+    <svg class="user-nav__icon">
+        <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
+    </svg>
+
+    <header class="header">
+        <div class="header__nav-user nav-user">
+            <ul class="nav-user__items">
+                <li class="nav-user__item nav-user__item--search">
+                    search
+                </li>
+                <li class="nav-user__item nav-user__item--logo">
+                    <img class="header__logo" src="img/logo.svg" alt="Full logo">
+                    logo
+                </li>
+                <li class="nav-user__item nav-user__item--user">
+                    user
+                </li>
+                <li class="nav-user__item nav-user__item--cart">
+                    cart
+                </li>
+            </ul>
+        </div>
+
+        <div class="header__main-nav main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__items main-nav__items-home">
+                    <a href="index.html" class="main-nav__atalog">
+                        Home
+                    </a>
+                </li>
+                <li class="main-nav__items main-nav__items-shop">
+                    <a href="catalog.html" class="main-nav__atalog">
+                        Catalog
+                    </a>
+                </li>
+                <ul class="subnav__items">
+                    <li class="subnav__item">
+                        Masks
+                    </li>
+                    <li class="subnav__item">
+                        Fins
+                    </li>
+                    <li class="subnav__item">
+                        Snorkels
+                    </li>
+                </ul>
+                <li class="main-nav__items main-nav__items-blog">Blog</li>
+                <li class="main-nav__items main-nav__items-logo">logo</li>
+                <li class="main-nav__items main-nav__items-contact">
+                    <a href="contact.html" class="main-nav__login">
+                        Contact
+                    </a>
+                </li>
+                <li class="main-nav__items main-nav__items-order">
+                    <a href="order.html" class="main-nav__login">
+                      Order
+                  </a>
+                  </li>
+            </ul>
+        </div>
+
+
+        <div class="title">
+            <img src="img/svg/wave.svg" alt="Wave">
+            <h2 class="top-sales__header">
+                Cart totals
+            </h2>
+            <img src="img/svg/wave.svg" alt="Wave">
+        </div>
+
+    </header>
+
+    <main class="main-product">
+
+
+        
+        <div id="wrapper">
+
+                    <div id="main-container" class="container">
+                        <form class="cart-form" action="#">
+                            <div class="table-responsive">
+                                <table class="table cart-table">
+                                    <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="product-name">Product</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="product-remove">
+                                            <a href="#" class="remove"><i class="fa fa-times-circle"></i></a>
+                                        </td>
+                                        <td class="product-name">
+                                            <a href="#">
+                                                <img src="public/images/product/product_2.jpg" alt="">
+                                                <span>fins</span>
+                                            </a>
+                                        </td>
+                                        <td class="product-price">
+                                            <p class="price">$35.00</p>
+                                        </td>
+                                        <td>
+                                            <div class="quantity">
+                                                <div class="minus qt"><i class="fa fa-minus"></i></div>
+                                                <input step="1" min="0" value="1" title="Qty" class="qty" size="4" type="number">
+                                                <div class="qt plus"><i class="fa fa-plus"></i></div>
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal">
+                                            <p class="price">$35.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-remove">
+                                            <a href="#" class="remove"><i class="fa fa-times-circle"></i></a>
+                                        </td>
+                                        <td class="product-name">
+                                            <a href="#">
+                                                <img src="public/images/product/product_2.jpg" alt="">
+                                                <span>American Vintage</span>
+                                            </a>
+                                        </td>
+                                        <td class="product-price">
+                                            <p class="price">$35.00</p>
+                                        </td>
+                                        <td>
+                                            <div class="quantity">
+                                                <div class="minus qt"><i class="fa fa-minus"></i></div>
+                                                <input step="1" min="0" value="1" title="Qty" class="qty" size="4" type="number">
+                                                <div class="qt plus"><i class="fa fa-plus"></i></div>
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal">
+                                            <p class="price">$35.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-remove">
+                                            <a href="#" class="remove"><i class="fa fa-times-circle"></i></a>
+                                        </td>
+                                        <td class="product-name">
+                                            <a href="#">
+                                                <img src="public/images/product/product_2.jpg" alt="">
+                                                <span>American Vintage</span>
+                                            </a>
+                                        </td>
+                                        <td class="product-price">
+                                            <p class="price">$35.00</p>
+                                        </td>
+                                        <td>
+                                            <div class="quantity">
+                                                <div class="minus qt"><i class="fa fa-minus"></i></div>
+                                                <input step="1" min="0" value="1" title="Qty" size="4" type="number" class="qty">
+                                                <div class="qt plus"><i class="fa fa-plus"></i></div>
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal">
+                                            <p class="price">$35.00</p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="cart-collaterals">
+                
+                                <div class="col-md-6">
+                                    <div class="cal-shipping">
+                                        <h3 class="title"><span>Cart totals</span></h3>
+                                        <table>
+            
+                                            <tr class="cart-subtotal">
+                                                <th>Subtotals:</th>
+                                                <td><strong><span class="amount">$105.00</span></strong></td>
+                                            </tr>
+            
+                                            <tr class="shipping discount">
+                                                <th>Discount:</th>
+                                                <td>%</td>
+                                            </tr>
+                                            <tr class="order-total">
+                                                <th><div class="black-bg">Order Totals :</div></th>
+                                                <td><div class="black-bg"><strong><span class="amount">$105.00</span></strong></div></td>
+                                            </tr>
+            
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+
+            <!-- <picture class="footer__logo">
+        <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+        <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+      </picture> -->
+            <img class="footer__logo" src="img/logo.svg" alt="Full logo">
+        </div>
+        <div class="footer__wrapper">
+
+            <div class="footer__navigation">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Company
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Contact us
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Carrers
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Privacy
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Terms
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__text">
+                <p class="footer__copyright">
+                    Learning course. Student
+                    <a href="" class="footer__link">
+                        Olga Ventsel.
+                    </a>
+                    Course name:
+                    <a href="" class="footer__link">
+                        "Advanced CSS and SASS".
+                    </a>
+                    Copyright &copy;
+                </p>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<div class="cart">
+    <div class="cart__title">My Cart</div>
+    <span class="cart__close">
+        Close
+    </span>
+    <div class="cart__product">
+    <div class="cart__image">
+        <img src="img/fins/Reaction Pro_black.jpg" alt="Reaction Pro" class="catalog__image">
+    </div>
+    <p class="cart__price">
+        $ <span>
+            23
+        </span>
+    </p>
+    </div>
+    <div class="cart__quantity">
+        <h4 class="cart__quantity-name">
+            Quantity
+        </h4>
+        <ul class="main-procartduct__quantity-items">
+            <li class="cart__quantity-item cart__quantity-item-minus">-</li>
+            <li class="cart__quantity-item cart__quantity-item-plus-quantity">0</li>
+            <li class="cart__quantity-item cart__quantity-item-plus">+</li>
+        </ul>
+    </div>
+    <div class="cart__spetial">
+        Order Special Instructions
+    </div>
+    <div class="cart__Discount">
+        Discount Code (Applied at Checkout)
+    </div>
+    <div class="cart__subtotal">
+        <p>Subtotal</p>
+        <p>$ <span>10</span></p>
+    </div>
+    <div class="cart__total">
+        <p>Total</p>
+        <p>$ <span>10</span></p>
+    </div>
+    <div class="cart__continue button__continue">
+        <button class="cart__cart btn--primary">Add to cart &rarr;</button>
+    </div>
+</div>
+
+
+https://mr-parker.myshopify.com/collections/rompers/products/rockstar-romper?variant=7164960997410

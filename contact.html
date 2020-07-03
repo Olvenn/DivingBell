@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+
+    <title>Diving bell</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    /* Style inputs */
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    
+    /* Style the container/contact section */
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+    }
+    
+    /* Create two columns that float next to eachother */
+    .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+</style>
+</head>
+
+<body class="container">
+    <div style="display: none">
+        <include src="img/sprite.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        </include>
+    </div>
+
+    <svg class="user-nav__icon">
+        <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
+    </svg>
+
+    <header class="header">
+        <div class="header__nav-user nav-user">
+            <ul class="nav-user__items">
+                <li class="nav-user__item nav-user__item--search">
+                    search
+                </li>
+                <li class="nav-user__item nav-user__item--logo">
+                    <img class="header__logo" src="img/logo.svg" alt="Full logo">
+                    logo
+                </li>
+                <li class="nav-user__item nav-user__item--user">
+                    user
+                </li>
+                <li class="nav-user__item nav-user__item--cart">
+                    cart
+                </li>
+            </ul>
+        </div>
+
+        <div class="header__main-nav main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__items main-nav__items-home">
+                    <a href="index.html" class="main-nav__atalog">
+                        Home
+                    </a>
+                </li>
+                <li class="main-nav__items main-nav__items-shop">
+                    <a href="catalog.html" class="main-nav__atalog">
+                        Catalog
+                    </a>
+                </li>
+                <ul class="subnav__items">
+                    <li class="subnav__item">
+                        Masks
+                    </li>
+                    <li class="subnav__item">
+                        Fins
+                    </li>
+                    <li class="subnav__item">
+                        Snorkels
+                    </li>
+                </ul>
+                <li class="main-nav__items main-nav__items-blog">Blog</li>
+                <li class="main-nav__items main-nav__items-logo">logo</li>
+                <li class="main-nav__items main-nav__items-contact">
+                    <a href="contact.html" class="main-nav__login">
+                        Contact
+                    </a>
+                </li>
+                <li class="main-nav__items main-nav__items-order">
+                    <a href="order.html" class="main-nav__login">
+                      Order
+                  </a>
+                  </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main class="main-contact">
+        <div class="contact">
+
+
+        <ul class="contact__items">
+            <div class="container">
+                <div  class="contact__title" style="text-align:center">
+                    <img src="img/svg/wave.svg" alt="Wave">
+                    <h2 class="contact__header">
+                      Contact us
+                    </h2>
+                    <img src="img/svg/wave.svg" alt="Wave">
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <div id="map" style="width:100%;height:500px"></div>
+                  </div>
+                  <div class="column">
+                    <form action="#">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      <label for="country">Town</label>
+                      <select id="country" name="country">
+                        <option value="australia">Moskow</option>
+                        <option value="canada">Saint Petersburg</option>
+                        <option value="usa">Novgorod</option>
+                      </select>
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                </div>
+              </div>
+        </ul>
+    </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+
+            <!-- <picture class="footer__logo">
+        <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+        <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+      </picture> -->
+            <img class="footer__logo" src="img/logo.svg" alt="Full logo">
+        </div>
+        <div class="footer__wrapper">
+
+            <div class="footer__navigation">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Company
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Contact us
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Carrers
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Privacy
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Terms
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__text">
+                <p class="footer__copyright">
+                    Learning course. Student
+                    <a href="" class="footer__link">
+                        Olga Ventsel.
+                    </a>
+                    Course name:
+                    <a href="" class="footer__link">
+                        "Advanced CSS and SASS".
+                    </a>
+                    Copyright &copy;
+                </p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap">
+    function myMap() {
+      var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+      var mapCanvas = document.getElementById("map");
+      var mapOptions = {center: myCenter, zoom: 12};
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      var marker = new google.maps.Marker({position:myCenter});
+      marker.setMap(map);
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</html>
+<div class="cart">
+    <div class="cart__title">My Cart</div>
+    <span class="cart__close">
+        Close
+    </span>
+    <div class="cart__product">
+    <div class="cart__image">
+        <img src="img/fins/Reaction Pro_black.jpg" alt="Reaction Pro" class="catalog__image">
+    </div>
+    <p class="cart__price">
+        $ <span>
+            23
+        </span>
+    </p>
+    </div>
+    <div class="cart__quantity">
+        <h4 class="cart__quantity-name">
+            Quantity
+        </h4>
+        <ul class="main-procartduct__quantity-items">
+            <li class="cart__quantity-item cart__quantity-item-minus">-</li>
+            <li class="cart__quantity-item cart__quantity-item-plus-quantity">0</li>
+            <li class="cart__quantity-item cart__quantity-item-plus">+</li>
+        </ul>
+    </div>
+    <div class="cart__spetial">
+        Order Special Instructions
+    </div>
+    <div class="cart__Discount">
+        Discount Code (Applied at Checkout)
+    </div>
+    <div class="cart__subtotal">
+        <p>Subtotal</p>
+        <p>$ <span>10</span></p>
+    </div>
+    <div class="cart__total">
+        <p>Total</p>
+        <p>$ <span>10</span></p>
+    </div>
+    <div class="cart__continue button__continue">
+        <button class="cart__cart btn--primary">Add to cart &rarr;</button>
+    </div>
+</div>
+
+
+https://mr-parker.myshopify.com/collections/rompers/products/rockstar-romper?variant=7164960997410

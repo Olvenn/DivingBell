@@ -1,0 +1,109 @@
+.main-slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.main-slider__wrapper {
+    overflow: hidden;
+    background: radial-gradient(100px 100px, circle, #5cabff, #000);
+}
+
+.switch {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.switch label {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    margin: 0 3px;
+
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+    border-radius: 50%;
+    border: 1px solid $color-fon;
+
+
+  background: -webkit-radial-gradient(100px 100px, circle, #5cabff, #000);
+  background: -moz-radial-gradient(100px 100px, circle, #5cabff, #000);
+  background: radial-gradient(100px 100px, circle, #5cabff, #000);
+}
+
+
+
+.main-slider__switch {
+    display: none;
+}
+
+#btn1:checked~.switch label[for="btn1"] {
+    background: $color-fon;
+}
+
+#btn2:checked~.switch label[for="btn2"] {
+    background: $color-fon;
+}
+
+#btn3:checked~.switch label[for="btn3"] {
+    background: $color-fon;
+}
+
+#btn4:checked~.switch label[for="btn4"] {
+    background: $color-fon;
+}
+
+
+
+
+
+.main-slider__items {
+    position: relative;
+    height: 700px;
+
+    box-shadow: 0 10px 20px 15px rgba(0, 0, 0, 0.75);
+
+}
+
+.kkk {
+  background: -webkit-radial-gradient(100px 100px, circle, #5cabff, #000);
+  background: -moz-radial-gradient(100px 100px, circle, #5cabff, #000);
+  background: radial-gradient(100px 100px, circle, #5cabff, #000);
+}
+
+.main-slider__item {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	transition: all 1.5s;
+	opacity: 0;
+}
+
+.main-slider__item:first-child {
+	opacity: 1;
+}
+
+#btn1:checked~.main-slider__wrapper .main-slider__item-1 {
+      transition: all 1.5s;
+  opacity: 1;
+}
+
+#btn2:checked~.main-slider__wrapper .main-slider__item-2 {
+  opacity: 1;
+}
+
+#btn3:checked~.main-slider__wrapper .main-slider__item-3 {
+  opacity: 1;
+}
+
+#btn4:checked~.main-slider__wrapper .main-slider__item-4 {
+  opacity: 1;
+}

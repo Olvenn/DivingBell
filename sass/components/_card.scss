@@ -1,0 +1,65 @@
+.card {
+    width: 375px;
+    padding: 25px;
+    // background-color: $color-white;
+    background: linear-gradient(180deg, rgba(202,226,250,1) 25%, rgba(255,255,255,1) 100%);
+    border-bottom: 1px solid rgba(202,226,250,1);
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    &__pic {
+
+      padding: 15px;
+      background-color: #fff;
+    }
+
+    &__img {
+      object-fit: contain;
+      width: 325px;
+      height: 325px;
+    }
+
+    &__wrap-text {
+      padding: 5px;
+    }
+
+
+}
+
+.card {
+    &__heart {
+        width: 3.85rem;
+        height: 2.76rem;
+
+        position: relative;
+    }
+
+    &__heart1 {
+
+        width: 2rem;
+        height: 3.5rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: $color-primary;
+        box-shadow: 3px 0px 3px #ffffff;
+        border-radius: 50px 50px 0 0;
+        transform: rotate(315deg);
+      }
+
+      &__heart2 {
+        position: absolute;
+        width: 3.5rem;
+        height: 2rem;
+        right: 0;
+        bottom: 0;
+        box-shadow:  -0px 3px 3px #ffffff;
+        transform: rotate(315deg);
+        background-color: $color-primary;
+        border-radius: 0 50px 50px 0;
+      }
+
+      $__heart:hover:before, &__heart:hover{
+        animation: pulsate 1s infinite;
+      }
+}

@@ -1,0 +1,47 @@
+.category {
+    max-width: 1980px;
+    margin: 0 auto;
+    margin: 100px;
+
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    } 
+
+    &__item {
+        max-width: 17%;
+        min-width: 350px;
+        margin: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px  #678baf; 
+        border: 2px solid #fff;
+        position: relative;
+        transition: all 1s;
+
+        &:hover {
+            border: 5px solid #fff;
+            transform: scale(1.05) translateY(-0.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+    }
+
+    &__link {
+
+    }
+
+    &__img {
+        border-radius: 10px;
+    }
+
+    &__name {
+        font-size: 2.5rem;
+        color: #e3e3e3;
+        position: absolute;
+        @include absCenter;
+        text-shadow: 0 0 5px black, 0 0 6px white;; 
+    }
+}

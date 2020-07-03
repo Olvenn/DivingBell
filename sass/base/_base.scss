@@ -1,0 +1,91 @@
+*,
+*::after
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+    line-height: 0
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Avenir Next Regular";
+    font-size: $default-font-size;
+    color: $color-text-main; 
+    /* background: radial-gradient(circle, #fff  0%, $color-fon 100%); */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.container {
+    /* background-color: $color-fon; */
+    margin: 0 auto;
+}
+
+.wave{
+    width: 630px;
+    background: #333;
+    height: 30px;
+    position: relative;
+    }
+
+/* .wave::after{
+    content: "";
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     background-repeat: repeat;
+     height: 15px;
+     background-size: 40px 20px;
+     background-image:
+     radial-gradient(circle at 10px 15px, #19d1ff 12px, transparent 13px);
+     }
+
+ .cont {
+     padding: 3rem;
+     width: 800px;
+         background-color: yellowgreen;
+         margin: 0 auto;
+ } */
+
+.header {
+    /* background-color: blue; */
+} 
+
+main {
+    /* background-color: red; */
+}
+
+footer {
+    background-color: yellow;
+}
+
+/* .divs {
+    width: 200px;
+    height: 230px;
+    background-color: yellow;
+    margin: 0 auto;
+
+} */
+
+
+
+

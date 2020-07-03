@@ -1,0 +1,77 @@
+.header {
+    margin: 0 auto;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header__logo {
+    border-radius: 30%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -10;
+}
+
+.nav-user {
+    /* background:  linear-gradient(90deg, rgba(40,50,60,1) 45%, rgba(255,255,255,1) 50%, rgba(40,50,60,1) 55%); */
+    background: url(../img/logo_w.svg) no-repeat top center; 
+    background-size: auto 150px;
+    background-color: $color-primary;
+    color: $color-white;
+
+}
+
+.nav-user__items {
+    display: flex;
+    padding: 20px 30px;
+}
+
+.nav-user__item--search {
+    margin-right: auto;
+}
+
+.nav-user__item {
+    padding: 0 20px;
+}
+
+.nav-user__item {
+    font-size: 20px;
+}
+
+.subnav__items {
+    display: none;
+}
+
+.main-nav__items-shop {
+    margin-right: auto;
+}
+
+
+
+.main-nav {
+    /* background: linear-gradient(90deg, white 45%, rgba(40,50,60,1) 45%, rgba(255,255,255,1) 50%, rgba(40,50,60,1) 55%, white 55%); */
+}
+
+.main-nav__items {
+    display: flex;
+    /* background-color: white; */
+    padding: 20px 30px;
+}
+
+
+                                                                                
+    /* .wave::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 15px;
+    background-size: 40px 20px;
+    background-image:
+    radial-gradient(circle at 10px 15px, #19d1ff 12px, transparent 13px);
+    } */
