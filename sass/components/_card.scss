@@ -22,8 +22,6 @@
     &__wrap-text {
       padding: 5px;
     }
-
-
 }
 
 .card {
@@ -62,4 +60,11 @@
       $__heart:hover:before, &__heart:hover{
         animation: pulsate 1s infinite;
       }
+}
+
+.add-to-cart {
+  width: 221px;
+  display: block;
+  margin: 0 auto;
+
 }
