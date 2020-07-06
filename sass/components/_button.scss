@@ -6,15 +6,15 @@
         text-decoration: none;
         padding: 0.5rem 2rem;
         display: inline-block;
-        border-radius: 10rem;
+        border-radius: 10px;
         transition: all .2s;
         position: relative;
         color: #777;
-        text-shadow:  0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 4px rgb(110, 214, 209), 0 0 8px rgb(110, 214, 209), 0 0 9px rgb(110, 214, 209);
-        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(148,233,229,1) 100%);
+        text-shadow:  0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 4px #cae2fa, 0 0 8px #cae2fa, 0 0 9px #cae2fa;
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, #cae2fa 100%);
         box-shadow: 0 .1rem .2rem rgba($color-black, .2);
         font-size: $default-font-size;
-        border: 7px ridge rgb(134, 226, 222);
+        border: 7px ridge #cae2fa;
         cursor: pointer;
     }
 
@@ -34,7 +34,7 @@
     &:focus {
         outline: none;
         transform: translateY(-1px);
-        background: radial-gradient(circle, rgba(148,233,229,1) 0%, rgba(255,255,255,1) 100%);          
+        background: radial-gradient(circle, #cae2fa 0%, rgba(255,255,255,1) 100%);          
         box-shadow: 0 .5px 1rem rgba($color-black, .2);
     }
 
@@ -62,7 +62,7 @@
         display: inline-block;
         height: 100%;
         width: 100%;
-        border-radius: 10rem;
+        border-radius: 10px;
         position: absolute;
         top: 0;
         left: 0;
