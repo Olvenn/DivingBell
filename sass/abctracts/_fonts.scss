@@ -29,6 +29,16 @@
   }
 
   @font-face {
+    font-family: 'Avenir Medium';
+    src: local('../fonts/Avenir Medium'), local('Avenir-Medium'),
+        url('../fonts/Avenir-Medium.woff2') format('woff2'),
+        url('../fonts/Avenir-Medium.woff') format('woff'),
+        url('../fonts/Avenir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
     font-family: 'Avenir Next Heavy';
     src: 
         url('../fonts/AvenirNextCyr-Heavy.woff2') format('woff2'),

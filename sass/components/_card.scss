@@ -1,16 +1,17 @@
 .card {
     width: 375px;
-    padding: 25px;
-    // background-color: $color-white;
-    background: linear-gradient(180deg, #cae2fa 25%, rgba(255,255,255,1) 100%);
+    padding: 35px 30px 50px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, #cae2fa 3%, rgba(255,255,255,1) 100%);
     border-bottom: 3px solid rgba(202,226,250,1);
     border-radius: 5px;
     margin-bottom: 10px;
 
-    &__pic {
 
+
+    &__pic {
       padding: 15px;
       background-color: #fff;
+      margin-bottom: 25px;
     }
 
     &__img {
@@ -19,10 +20,41 @@
       height: 325px;
     }
 
+    &__cover {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      margin: 40px 0 30px;
+    }
+
+    &__estimator {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
     &__wrap-text {
       padding: 5px;
     }
+
+    &__name {
+      font-family: Avenir Medium;
+      text-transform: uppercase;
+    }
+
+    &__price {
+      font-family: Avenir Medium;
+      padding-top: 10px;
+
+    }
+
 }
+
+/* .top-sales__top {
+  height: 20px;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(40,50,60,1) 50%, rgba(255,255,255,1) 100%);
+} */
 
 .card {
     &__heart {
@@ -40,10 +72,11 @@
         left: 0;
         top: 0;
         background-color: #bedefd;
-        box-shadow: 3px 0px 3px #ffffff;
+        box-shadow: 1px 0px 1px $color-primary-dark;
         border-radius: 50px 50px 0 0;
         transform: rotate(315deg);
       }
+
 
       &__heart2 {
         position: absolute;
@@ -51,7 +84,7 @@
         height: 1.36rem;
         right: 0;
         bottom: 0;
-        box-shadow:  -0px 3px 3px #ffffff;
+        box-shadow:  1px 2px 2px $color-primary-dark;
         transform: rotate(315deg);
         background-color: #bedefd;
         border-radius: 0 50px 50px 0;
@@ -59,6 +92,15 @@
 
       $__heart:hover:before, &__heart:hover{
         animation: pulsate 1s infinite;
+      }
+
+      &__stars {
+        font-size: 30px;
+        margin: 7px 0;
+      }
+
+      &__count {
+        font-size: 25px;
       }
 }
 

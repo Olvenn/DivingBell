@@ -22,6 +22,12 @@
   font-style: italic; }
 
 @font-face {
+  font-family: 'Avenir Medium';
+  src: local("../fonts/Avenir Medium"), local("Avenir-Medium"), url("../fonts/Avenir-Medium.woff2") format("woff2"), url("../fonts/Avenir-Medium.woff") format("woff"), url("../fonts/Avenir-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Avenir Next Heavy';
   src: url("../fonts/AvenirNextCyr-Heavy.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Heavy.woff") format("woff"), url("../fonts/AvenirNextCyr-Heavy.ttf") format("truetype");
   font-weight: 900;
@@ -992,21 +998,42 @@ footer {
 } */
 .card {
   width: 375px;
-  padding: 25px;
-  background: linear-gradient(180deg, #cae2fa 25%, white 100%);
+  padding: 35px 30px 50px;
+  background: linear-gradient(180deg, white 0%, #cae2fa 3%, white 100%);
   border-bottom: 3px solid #cae2fa;
   border-radius: 5px;
   margin-bottom: 10px; }
   .card__pic {
     padding: 15px;
-    background-color: #fff; }
+    background-color: #fff;
+    margin-bottom: 25px; }
   .card__img {
     object-fit: contain;
     width: 325px;
     height: 325px; }
+  .card__cover {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 40px 0 30px; }
+  .card__estimator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end; }
   .card__wrap-text {
     padding: 5px; }
+  .card__name {
+    font-family: Avenir Medium;
+    text-transform: uppercase; }
+  .card__price {
+    font-family: Avenir Medium;
+    padding-top: 10px; }
 
+/* .top-sales__top {
+  height: 20px;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(40,50,60,1) 50%, rgba(255,255,255,1) 100%);
+} */
 .card__heart {
   width: 2.62rem;
   height: 1.88rem;
@@ -1019,7 +1046,7 @@ footer {
   left: 0;
   top: 0;
   background-color: #bedefd;
-  box-shadow: 3px 0px 3px #ffffff;
+  box-shadow: 1px 0px 1px #36628d;
   border-radius: 50px 50px 0 0;
   transform: rotate(315deg); }
 
@@ -1029,13 +1056,20 @@ footer {
   height: 1.36rem;
   right: 0;
   bottom: 0;
-  box-shadow: -0px 3px 3px #ffffff;
+  box-shadow: 1px 2px 2px #36628d;
   transform: rotate(315deg);
   background-color: #bedefd;
   border-radius: 0 50px 50px 0; }
 
 .card :before, .card__heart:hover {
   animation: pulsate 1s infinite; }
+
+.card__stars {
+  font-size: 30px;
+  margin: 7px 0; }
+
+.card__count {
+  font-size: 25px; }
 
 .add-to-cart {
   width: 221px;
