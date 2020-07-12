@@ -441,6 +441,10 @@ ul {
   margin: 0;
   padding: 0; }
 
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em; }
+
 body {
   font-family: "Avenir Next Regular";
   font-size: 1.6rem;
@@ -968,6 +972,11 @@ footer {
   .top-sales__item {
     margin: 40px 20px; }
 
+.new-products__items {
+  display: flex;
+  margin-left: 60px;
+  justify-content: space-evenly; }
+
 /* .feature-box {
     font-size: 1.5rem;
     padding: 2.5rem;
@@ -1002,33 +1011,35 @@ footer {
   background: linear-gradient(180deg, white 0%, #cae2fa 3%, white 100%);
   border-bottom: 3px solid #cae2fa;
   border-radius: 5px;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
   .card__pic {
     padding: 15px;
     background-color: #fff;
-    margin-bottom: 25px; }
+    margin: 0 auto;
+    margin-bottom: 15px;
+    position: relative; }
   .card__img {
     object-fit: contain;
     width: 325px;
     height: 325px; }
   .card__cover {
+    margin: 40px 0;
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    margin: 40px 0 30px; }
-  .card__estimator {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: flex-end; }
+  .card__estimator {
+    padding: 30px 10px 0;
+    display: flex;
+    justify-content: space-between; }
   .card__wrap-text {
     padding: 5px; }
   .card__name {
     font-family: Avenir Medium;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 15px; }
   .card__price {
     font-family: Avenir Medium;
-    padding-top: 10px; }
+    margin-bottom: 5px; }
 
 /* .top-sales__top {
   height: 20px;
@@ -1038,6 +1049,11 @@ footer {
   width: 2.62rem;
   height: 1.88rem;
   position: relative; }
+
+.card__heart-cover {
+  position: absolute;
+  bottom: -20px;
+  right: 0; }
 
 .card__heart1 {
   width: 1.36rem;
@@ -1065,11 +1081,14 @@ footer {
   animation: pulsate 1s infinite; }
 
 .card__stars {
+  font-family: Avenir Medium;
   font-size: 30px;
   margin: 7px 0; }
 
 .card__count {
-  font-size: 25px; }
+  font-family: Avenir Medium;
+  color: #777;
+  font-size: 20px; }
 
 .add-to-cart {
   width: 221px;

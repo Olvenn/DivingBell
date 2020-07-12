@@ -3,12 +3,10 @@
     margin: 0 auto;
     margin: 100px;
 
-
     &__items {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-
     } 
 
     &__item {

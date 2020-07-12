@@ -4,14 +4,14 @@
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, #cae2fa 3%, rgba(255,255,255,1) 100%);
     border-bottom: 3px solid rgba(202,226,250,1);
     border-radius: 5px;
-    margin-bottom: 10px;
-
-
+    margin-bottom: 20px;
 
     &__pic {
       padding: 15px;
       background-color: #fff;
-      margin-bottom: 25px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      position: relative;
     }
 
     &__img {
@@ -21,18 +21,19 @@
     }
 
     &__cover {
-      display: flex;
-      justify-content: space-between;
-      align-items: stretch;
-      margin: 40px 0 30px;
-    }
+      margin: 40px 0;
 
-    &__estimator {
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
       align-items: flex-end;
     }
+
+    &__estimator {
+      padding: 30px 10px 0;
+
+      display: flex;
+      justify-content: space-between;
+   }
 
     &__wrap-text {
       padding: 5px;
@@ -41,15 +42,16 @@
     &__name {
       font-family: Avenir Medium;
       text-transform: uppercase;
+      margin-bottom: 15px;
     }
 
     &__price {
       font-family: Avenir Medium;
-      padding-top: 10px;
-
+      margin-bottom: 5px;
     }
-
 }
+
+
 
 /* .top-sales__top {
   height: 20px;
@@ -64,8 +66,13 @@
         position: relative;
     }
 
-    &__heart1 {
+    &__heart-cover {
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+    }
 
+    &__heart1 {
         width: 1.36rem;
         height: 2.38rem;
         position: absolute;
@@ -76,7 +83,6 @@
         border-radius: 50px 50px 0 0;
         transform: rotate(315deg);
       }
-
 
       &__heart2 {
         position: absolute;
@@ -95,12 +101,15 @@
       }
 
       &__stars {
+        font-family: Avenir Medium;
         font-size: 30px;
         margin: 7px 0;
       }
 
       &__count {
-        font-size: 25px;
+        font-family: Avenir Medium;
+        color: #777;
+        font-size: 20px;
       }
 }
 

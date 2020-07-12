@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: 'Avenir Next Thin';
     src: 
         url('fonts/AvenirNextCyr-Thin.woff2') format('woff2'),
@@ -16,6 +16,16 @@
         url('fonts/AvenirNextCyr-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Avenir Medium';
+    src: local('Avenir Medium'), local('Avenir-Medium'),
+        url('fonts/Avenir-Medium.woff2') format('woff2'),
+        url('fonts/Avenir-Medium.woff') format('woff'),
+        url('fonts/Avenir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
   }
 
   @font-face {
@@ -46,7 +56,7 @@
         url('fonts/AvenirNextCyr-HeavyItalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
-  /* } */
+ }
 
 
   @font-face {
