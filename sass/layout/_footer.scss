@@ -1,3 +1,19 @@
+.footer {
+    padding: 2rem 5rem;
+    background-color: $color-primary;
+    color: $color-white;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+    }
+}
 /* .footer {
     padding: 10rem 0;
     font-size: 1.4rem;

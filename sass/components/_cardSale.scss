@@ -1,15 +1,228 @@
    .kits {
-       width: 400px;
-       height: 500px;
+       width: 1980px;
+       margin: 0 auto;
 
-    &__picture {
-        background-size: cover;
-        background-color: red;
-        height: 200px;
+       &__wrapper {
+           background-color: $color-fon-light;
+           /* background-image: url(../img/bubbles-1.png); */
+           padding: 50px;
+       }
+
+       &__items {
+           display: flex;
+           justify-content: space-evenly;
+       }
+   }
+
+   .kit {
+       /* background-color: #fff; */
+       /* border-radius: 20px; */
+       perspective: 550rem;
+       -moz-perspective: 550rem;
+       position: relative;
+       transition: transform 1s;
+       transform-style: preserve-3d;
+       height: 53rem;
+       height: 600px;
+       width: 400px;
+
+       &:hover {
+           transform: rotateY(180deg);
+       }
+
+       &__side {
+        height: 600px;
         width: 400px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        /*убираем картинку, чтобы скруглить углы и т.п*/
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
+
+        &--front {
+            background: $color-white;
+        }
+
+        &--back {
+            transform: rotateY(-180deg);
+            /* Поворачиваем текст */
+
+            color: #fff;
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, 
+                $color-fifth-dark, $color-fifth-light);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, 
+                $color-fourth-dark, $color-fourth-light);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, 
+                $color-primary-dark, $color-primary-light);
+            }
+        }
     }
 
+       &__picture {
+        width: 400px;
+        height: 300px;
+           background-size: cover;
+           background-blend-mode: multiply;
+           height: 300px;
+           clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
+           &--1 {
+               background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light),
+                   url(../img/kit1.jpg);
+               background-position: center;
+           }
+
+           &--2 {
+               background-image: linear-gradient(to right bottom, $color-secondary-dark, $color-secondary-light),
+                   url(../img/kit2.jpg);
+               background-position: center;
+           }
+
+           &--3 {
+               background-image: linear-gradient(to right bottom, $color-tertiary-dark, $color-tertiary-light),
+                   url(../img/kit3.jpg);
+               background-position: center;
+           }
+       }
+
+       &__heading {
+        width: 400px;
+        height: auto;
+        font-size: 30px;
+        text-transform: uppercase;
+        position: absolute;
+        text-align: right;
+        line-height: 2;
+        bottom: 240px;
+        right: 30px;
+        width: 85%;
+        color: $color-white;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        /*делаем из одной строки при ее делении на несколько "строк" - при переносе у каждой строки добавляется паддинг*/
+
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-fifth-light, .85),
+            rgba($color-fifth-dark, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+            /* rgba($color-secondary-light, .85),
+            rgba($color-secondary-dark, .85)); */
+            rgba($color-fourth-light, .85),
+            rgba($color-fourth-dark, .85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-primary-light, .85),
+                    rgba($color-primary-dark, .85));
+        }
+
+        &__details {
+           padding: 3rem 3rem 3rem 3rem;
+
+           &-items {
+               list-style: none;
+               width: 80%;
+               margin: 0 auto;
+               padding: 0;
+           }
+
+           &-item {
+               text-align: center;
+               font-size: 1.5rem;
+               padding: 1rem;
+
+               &:not(:last-child) {
+                   border-bottom: 1px solid $color-fon-under;
+               }
+           }
+       }
+
+       &__cta {
+           @include absCenter;
+           position: absolute;
+           width: 90%;
+       }
+
+       &__price-box {
+           text-align: center;
+           color: $color-white;
+           margin-bottom: 8rem;
+       }
+
+       &__price-only {
+           font-size: 1.4rem;
+           text-transform: uppercase;
+       }
+
+       &__price-value {
+           font-size: 6rem;
+           margin-bottom: 8rem;
+           font-weight: 100;
+       }
+    }
+    &__details {
+        padding: 3rem 3rem 3rem 3rem;
+
+        &-items {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        &-item {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1rem;
+
+            &:not(:last-child) {
+                border-bottom: 3px solid $color-fon-under;
+            }
+        }
+    }
+
+    &__cta {
+        @include absCenter;
+        position: absolute;
+        width: 90%;
+    }
+
+    &__price-box {
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        margin-bottom: 8rem;
+        font-weight: 100;
+    }
        /* &__picture {
 
         width:
@@ -20,11 +233,11 @@
        
 
     } */
-}
+   }
 
 
 
-/*        &--1 {
+   /*        &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-dark, $color-secondary-light),
                 url(img/kit1.jpg);
         }
@@ -39,8 +252,8 @@
                 url(../img/kit3.jpg);
         } */
 
-   
-   
+
+
    /* .card {
 
        perspective: 150rem;
@@ -231,7 +444,7 @@
            /* front side style */
 
 
-           /* &__cta {
+   /* &__cta {
                width: 100%;
                transform: translate(0);
                position: relative;
@@ -254,4 +467,4 @@
                font-weight: 100;
            }
        }
-   } */ 
+   } */
