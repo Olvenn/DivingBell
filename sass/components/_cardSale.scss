@@ -1,5 +1,5 @@
    .kits {
-       width: 1980px;
+     max-width: 1680px;
        margin: 0 auto;
 
        &__wrapper {
@@ -17,8 +17,7 @@
    .kit {
        /* background-color: #fff; */
        /* border-radius: 20px; */
-       perspective: 550rem;
-       -moz-perspective: 550rem;
+
        position: relative;
        transition: transform 1s;
        transform-style: preserve-3d;
