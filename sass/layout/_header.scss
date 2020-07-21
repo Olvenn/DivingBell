@@ -1,7 +1,6 @@
 .header {
     margin: 0 auto;
     width: 100vw;
-    box-sizing: border-box;
     position: relative;
 }
 
@@ -53,6 +52,7 @@
 
 
 .main-nav {
+    width: 100vw;
     /* background: linear-gradient(90deg, white 45%, rgba(40,50,60,1) 45%, rgba(255,255,255,1) 50%, rgba(40,50,60,1) 55%, white 55%); */
 }
 

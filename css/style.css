@@ -433,6 +433,11 @@ template {
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 img {
   width: 100%;
   vertical-align: bottom;
@@ -775,9 +780,8 @@ footer {
   transform: translateY(0); }
 
 .category {
-  max-width: 1680px;
-  margin: 0 auto;
-  margin: 100px; }
+  max-width: 1980px;
+  margin: 0 auto; }
   .category__items {
     display: flex;
     flex-wrap: wrap;
@@ -810,7 +814,7 @@ footer {
 
 .main-slider {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: auto;
   margin: 0 auto; }
 
@@ -958,9 +962,8 @@ footer {
 
 } */
 .top-sales__wrapper {
-  max-width: 1680px;
+  max-width: 1980px;
   margin: 0px auto;
-  padding: 100px 0;
   background-color: #fff; }
 
 .top-sales__items {
@@ -973,16 +976,15 @@ footer {
 .top-sales__item {
   margin: 0 20px 40px; }
 
-.kits {
-  max-width: 1680px;
-  margin: 0 auto; }
-  .kits__wrapper {
-    background-color: #e3fcfa;
-    /* background-image: url(../img/bubbles-1.png); */
-    padding: 50px; }
-  .kits__items {
-    display: flex;
-    justify-content: space-evenly; }
+.kits__wrapper {
+  max-width: 1780px;
+  margin: 0 auto;
+  background-color: #e3fcfa;
+  /* background-image: url(../img/bubbles-1.png); */ }
+
+.kits__items {
+  display: flex;
+  justify-content: space-evenly; }
 
 .kit {
   /* background-color: #fff; */
@@ -990,19 +992,8 @@ footer {
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
-  height: 53rem;
-  height: 600px;
   width: 400px;
-  /* &__picture {
-
-        width:
-        background-size: cover;
-        height: 23rem;
-        background-blend-mode: screen;
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-       
-
-    } */ }
+  height: 800px; }
   .kit:hover {
     transform: rotateY(180deg); }
   .kit__side {
@@ -1130,236 +1121,9 @@ footer {
     margin-bottom: 8rem;
     font-weight: 100; }
 
-/*        &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-dark, $color-secondary-light),
-                url(img/kit1.jpg);
-        }
- 
-        &--2 {
-            background-image: linear-gradient(to right bottom, $primary-color-dark, $primary-color-light),
-                url(../img/kit2.jpg);
-        }
-
-        &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-dark, $color-tertiary-light),
-                url(../img/kit3.jpg);
-        } */
-/* .card {
-
-       perspective: 150rem;
-       -moz-perspective: 150rem;
-       position: relative;
-       height: 53rem;
-
-       transition: transform 1s;
-       transform-style: preserve-3d;
-
-
-       &:hover {
-           transform: rotateY(180deg);
-       }
-
-       &__side {
-           height: 53rem;
-           width: 100%;
-           position: absolute;
-           top: 0;
-           bottom: 0;
-           backface-visibility: hidden;
-           border-radius: 3px;
-           overflow: hidden;
-
-           box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
-
-           &--front {
-               background: $color-white;
-
-           }
-
-           &--back {
-               transform: rotateY(-180deg);
-
-
-               color: #fff;
-
-               &-1 {
-                   background-image: linear-gradient(to right bottom, $color-secondary-dark, $color-secondary-light);
-               }
-
-               &-2 {
-                   background-image: linear-gradient(to right bottom, $primary-color-dark, $primary-color-light);
-               }
-
-               &-3 {
-                   background-image: linear-gradient(to right bottom, $color-tertiary-dark, $color-tertiary-light);
-               }
-           }
-       }
-
-
-
-       &__picture {
-           background-size: cover;
-           height: 23rem;
-           background-blend-mode: screen;
-
-           clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-
-           &--1 {
-               background-image: linear-gradient(to right bottom, $color-secondary-dark, $color-secondary-light),
-                   url(../img/nat-5.jpg);
-           }
-
-           &--2 {
-               background-image: linear-gradient(to right bottom, $primary-color-dark, $primary-color-light),
-                   url(../img/nat-6.jpg);
-           }
-
-           &--3 {
-               background-image: linear-gradient(to right bottom, $color-tertiary-dark, $color-tertiary-light),
-                   url(../img/nat-7.jpg);
-           }
-       }
-
-       &__heading {
-           font-size: 2.8rem;
-           font-weight: 300;
-           text-transform: uppercase;
-           position: absolute;
-           text-align: right;
-           top: 10rem;
-           right: 2rem;
-           width: 85%;
-           color: $color-white;
-       }
-
-       &__heading-span {
-           padding: 1rem 1.5rem;
-           -webkit-box-decoration-break: clone;
-           box-decoration-break: clone;
-
-           &--1 {
-               background-image: linear-gradient(to right bottom,
-                       rgba($color-secondary-light, .85),
-                       rgba($color-secondary-dark, .85));
-           }
-
-
-           &--2 {
-               background-image: linear-gradient(to right bottom,
-                       rgba($primary-color-light, .85),
-                       rgba($primary-color-dark, .85));
-           }
-
-
-           &--3 {
-               background-image: linear-gradient(to right bottom,
-                       rgba($color-tertiary-light, .85),
-                       rgba($color-tertiary-dark, .85));
-           }
-       }
-
-       &__details {
-           padding: 3rem 3rem 3rem 3rem;
-
-           &-items {
-               list-style: none;
-               width: 80%;
-               margin: 0 auto;
-               padding: 0;
-           }
-
-           &-item {
-               text-align: center;
-               font-size: 1.5rem;
-               padding: 1rem;
-
-               &:not(:last-child) {
-                   border-bottom: 1px solid $color-fon-under;
-               }
-           }
-       }
-
-       &__cta {
-           @include absCenter;
-           position: absolute;
-           width: 90%;
-       }
-
-       &__price-box {
-           text-align: center;
-           color: $color-white;
-           margin-bottom: 8rem;
-       }
-
-       &__price-only {
-           font-size: 1.4rem;
-           text-transform: uppercase;
-       }
-
-       &__price-value {
-           font-size: 6rem;
-           margin-bottom: 8rem;
-           font-weight: 100;
-       }
-
-
-
-
-   }
-
-   @include respond(tab-port) {
-       .card {
-           height: auto;
-           border-radius: 3px;
-           background-color: $color-white;
-           box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
-
-           &:hover {
-               transform: rotateY(0);
-           }
-
-           &__side {
-               height: auto;
-               position: relative;
-               box-shadow: none;
-
-               &--back {
-                   padding-top: 5rem;
-                   transform: rotateY(0);
-                   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-               }
-           }
-
-           /* front side style */
-/* &__cta {
-               width: 100%;
-               transform: translate(0);
-               position: relative;
-               top: 0;
-               left: 0;
-           }
-
-           &__price-box {
-               margin-bottom: 5rem;
-           }
-
-           &__price-only {
-               font-size: 1.4rem;
-               text-transform: uppercase;
-           }
-
-           &__price-value {
-               font-size: 6rem;
-               margin-bottom: 2rem;
-               font-weight: 100;
-           }
-       }
-   } */
 .new-products {
-  max-width: 1680px;
+  max-width: 1980px;
   margin: 0 auto;
-  padding: 100px 0;
   background-color: #fff; }
   .new-products__items {
     display: flex;
@@ -1578,6 +1342,9 @@ footer {
 }
 
  */
+.video {
+  max-width: 1200px; }
+
 /* .bg-video {
     position: absolute;
     top: 0;
@@ -1809,7 +1576,6 @@ footer {
 .header {
   margin: 0 auto;
   width: 100vw;
-  box-sizing: border-box;
   position: relative; }
 
 .header__logo {
@@ -1849,6 +1615,7 @@ footer {
   margin-right: auto; }
 
 .main-nav {
+  width: 100vw;
   /* background: linear-gradient(90deg, white 45%, rgba(40,50,60,1) 45%, rgba(255,255,255,1) 50%, rgba(40,50,60,1) 55%, white 55%); */ }
 
 .main-nav__items {
@@ -1870,10 +1637,11 @@ footer {
     } */
 .footer {
   width: 100vw;
-  padding: 2rem 5rem;
   background-color: #28323c;
   color: #fff; }
   .footer__wrapper {
+    padding: 2rem 5rem; }
+  .footer__cover {
     display: flex;
     justify-content: space-evenly; }
   .footer__main-header {
@@ -1891,6 +1659,38 @@ footer {
     margin: 0 auto;
     margin-top: 100px; }
 
+/* .footer {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 2rem 5rem;
+    background-color: $color-primary;
+    color: $color-white;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__main-header {
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid $color-white;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+    }
+
+    &__text {
+        width: 980px;
+        font-size: 20px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+} */
 /* .navigation {
 
     &__checkbox {
