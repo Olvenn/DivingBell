@@ -20,78 +20,67 @@
     </include>
   </div>
 
-  <svg class="user-nav__icon">
-    <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
-  </svg>
-
   <header class="header">
-    <div class="header__nav-user nav-user">
+    <div class="header__logo">
+      <img class="header__logo-img" src="img/logo_clear.svg" alt="Full logo" height="150">
+    </div>
+
+    <div class="nav-user">
+
       <ul class="nav-user__items">
         <li class="nav-user__item nav-user__item--search">
-          search
+          Search
         </li>
         <li class="nav-user__item nav-user__item--logo">
-            <img class="header__logo" src="img/logo.svg" alt="Full logo">
-          logo
+          Logo
         </li>
         <li class="nav-user__item nav-user__item--user">
-          user
+          User
         </li>
         <li class="nav-user__item nav-user__item--cart">
-          cart
+          Cart
         </li>
       </ul>
     </div>
-
-    <div class="header__main-nav main-nav">
+    <nav class="main-nav">
       <ul class="main-nav__items">
         <li class="main-nav__items main-nav__items-home">
-            <a href="index.html" class="main-nav__atalog">
-                Home
-            </a>
+          Home
+        </li>
+        <li class="main-nav__items main-nav__items-Catalog">
+          <a href="catalog.html" class="main-nav__atalog">
+            Catalog
+          </a>
         </li>
         <li class="main-nav__items main-nav__items-shop">
-            <a href="catalog.html" class="main-nav__atalog">
-                Catalog
-            </a>
-        </li>
-          <ul class="subnav__items">
-            <li class="subnav__item">
-              Masks
-            </li>
-            <li class="subnav__item">
-              Fins
-            </li>
-            <li class="subnav__item">
-              Snorkels
-            </li>
-          </ul>
-        <li class="main-nav__items main-nav__items-blog">Blog</li>
-        <li class="main-nav__items main-nav__items-logo">
-          <a href="login.html" class="main-nav__login">
-              logo
+          <a href="product.html" class="main-nav__atalog">
+            Product
           </a>
-      </li>
-      <li class="main-nav__items main-nav__items-contact">
-        <a href="contact.html" class="main-nav__login">
+        </li>
+        <ul class="main-nav__subnav subnav__items">
+          <li class="subnav__item">
+            Masks
+          </li>
+          <li class="subnav__item">
+            Fins
+          </li>
+          <li class="subnav__item">
+            Snorkels
+          </li>
+        </ul>
+        <li class="main-nav__items main-nav__items-contact">
+          <a href="contact.html" class="main-nav__login">
+            Blog
+          </a>
+        </li>
+        <li class="main-nav__items main-nav__items-contact">
+          <a href="contact.html" class="main-nav__login">
             Contact
-        </a>
-    </li>
-        <li class="main-nav__items main-nav__items-order">
-          <a href="order.html" class="main-nav__login">
-            Order
-        </a>
+          </a>
         </li>
       </ul>
-    </div>
-
-    <div class="title">
-      <img src="img/svg/wave.svg" alt="Wave">
-      <h2 class="top-sales__header">
-        Top sales
-      </h2>
-      <img src="img/svg/wave.svg" alt="Wave">
-  </div>
+    </nav>
+  </header>
 
   <main class="main">
     <section class="filters">
@@ -229,380 +218,258 @@
     </section>
     <section class="catalog">
         <ul class="catalog__items">
-            <li class="catalog__items">
-                    <img src="img/fins/Reaction Pro.jpg" alt="Reaction Pro" class="catalog__image">
-                    <div class="catalog__group">
-                        Finns
-                    </div>
-                    <h3 class="catalog__title">
-                        Product
-                    </h3>
-                    <p class="catalog__brand">
-                        Scubapro
-                    </p>
-                    <p class="catalog__price">
-                        10$
-                    </p>
-                    <div class="catalog__buy-now button__buy-now">
-                        <button class="catalog__cart btn--primary">Add to cart &rarr;</button>
-                    </div>
-                    <div class="catalog__like">
-                        <img src="img/svg/heart.svg" alt="Wave">
-                    </div>
-                    <div class="catalog__btns">
-                <div class="catalog__popup button__quick">
-                    <a href="#" class="catalog__link">
-                        Quick view
-                    </a>
+          <li class="catalog__item card">
+            <div class="catalog__item__pic card__pic">
+              <a class="card__link">
+                <picture>
+                  <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                  <img class="catalog__item__img card__img" src="img/fins/Avanti Superchannel FF.jpg"
+                    srcset="img/fins/Avanti Superchannel FF.jpg" width="100" alt="Фон 4">
+                </picture>
+              </a>
+              <div class="catalog__item__estimator card__estimator">
+                <div class="catalog__item__heart card__heart">
+                  <div class="card__heart1"></div>
+                  <div class="card__heart2"></div>
                 </div>
-                <div class="catalog__buy-now button__buy-now">
-                    <a href="#" class="catalog__link">
-                        Buy now
-                    </a>
+                <div class="catalog__item__stars card__stars">&#9734;&#10025;&#10025;&#10025;&#10025;
+                  <span class="catalog__item__count card__count">1000</span>
                 </div>
+              </div>
             </div>
-            </li>
+            <div class="card__cover">
+              <div class="card__wrap-text">
+                <p class="catalog__item__name card__name">
+                  Avanti Superchannel FF
+                </p>
+                <p lass="catalog__item__brand card__brand">
+                  Scubapro
+                </p>
+              </div>
+              <div class="catalog__item__price card__price">
+                50.40$
+              </div>
+            </div>
+            <div class="add-to-cart">
+              <a href="#" class="btn cart-button">В корзину</a>
+            </div>
+          </li>
+
+          <li class="catalog__item card">
+            <div class="catalog__item__pic card__pic">
+              <a class="card__link">
+                <picture>
+                  <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                  <img class="catalog__item__img card__img" src="img/fins/X-Voyager.jpg"
+                    srcset="img/fins/Avanti Superchannel FF.jpg" width="100" alt="Фон 4">
+                </picture>
+              </a>
+              <div class="catalog__item__estimator card__estimator">
+                <div class="catalog__item__heart card__heart">
+                  <div class="card__heart1"></div>
+                  <div class="card__heart2"></div>
+                </div>
+                <div class="catalog__item__stars card__stars">&#9734;&#10025;&#10025;&#10025;&#10025;
+                  <span class="catalog__item__count card__count">1000</span>
+                </div>
+              </div>
+            </div>
+            <div class="card__cover">
+              <div class="card__wrap-text">
+                <p class="catalog__item__name card__name">
+                  X-Voyager
+                </p>
+                <p lass="catalog__item__brand card__brand">
+                  Beuchat
+                </p>
+              </div>
+              <div class="catalog__item__price card__price">
+                29.00$
+              </div>
+            </div>
+            <div class="add-to-cart">
+              <a href="#" class="btn cart-button">В корзину</a>
+            </div>
+          </li>
+
+          <li class="catalog__item card">
+            <div class="catalog__item__pic card__pic">
+              <a class="card__link">
+                <picture>
+                  <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                  <img class="catalog__item__img card__img" src="img/masks/Hero.jpg"
+                    srcset="img/fins/Avanti Superchannel FF.jpg" width="100" alt="Фон 4">
+                </picture>
+              </a>
+              <div class="catalog__item__estimator card__estimator">
+                <div class="catalog__item__heart card__heart">
+                  <div class="card__heart1"></div>
+                  <div class="card__heart2"></div>
+                </div>
+                <div class="catalog__item__stars card__stars">&#9734;&#10025;&#10025;&#10025;&#10025;
+                  <span class="catalog__item__count card__count">1000</span>
+                </div>
+              </div>
+            </div>
+            <div class="card__cover">
+              <div class="card__wrap-text">
+                <p class="catalog__item__name card__name">
+                  Hero
+                </p>
+                <p lass="catalog__item__brand card__brand">
+                  Seac
+                </p>
+              </div>
+              <div class="catalog__item__price card__price">
+                37.00$
+              </div>
+            </div>
+            <div class="add-to-cart">
+              <a href="#" class="btn cart-button">В корзину</a>
+            </div>
+          </li>
+
+
+          <li class="catalog__item card">
+            <div class="catalog__item__pic card__pic">
+              <a class="card__link">
+                <picture>
+                  <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                  <img class="catalog__item__img card__img" src="img/masks/Viper black frame.jpg"
+                    srcset="img/fins/Avanti Superchannel FF.jpg" width="100" alt="Фон 4">
+                </picture>
+              </a>
+              <div class="catalog__item__estimator card__estimator">
+                <div class="catalog__item__heart card__heart">
+                  <div class="card__heart1"></div>
+                  <div class="card__heart2"></div>
+                </div>
+                <div class="catalog__item__stars card__stars">&#9734;&#10025;&#10025;&#10025;&#10025;
+                  <span class="catalog__item__count card__count">1000</span>
+                </div>
+              </div>
+            </div>
+            <div class="card__cover">
+              <div class="card__wrap-text">
+                <p class="catalog__item__name card__name">
+                  "Viper" black frame
+                </p>
+                <p lass="catalog__item__brand card__brand">
+                  TecLine
+                </p>
+              </div>
+              <div class="catalog__item__price card__price">
+                25.61$
+              </div>
+            </div>
+            <div class="add-to-cart">
+              <a href="#" class="btn cart-button">В корзину</a>
+            </div>
+          </li>
+
+
+          <li class="catalog__item card">
+            <div class="catalog__item__pic card__pic">
+              <a class="card__link">
+                <picture>
+                  <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                  <img class="catalog__item__img card__img" src="img/masks/Synergy Twin Mirror.jpg"
+                    srcset="img/fins/Avanti Superchannel FF.jpg" width="100" alt="Фон 4">
+                </picture>
+              </a>
+              <div class="catalog__item__estimator card__estimator">
+                <div class="catalog__item__heart card__heart">
+                  <div class="card__heart1"></div>
+                  <div class="card__heart2"></div>
+                </div>
+                <div class="catalog__item__stars card__stars">&#9734;&#10025;&#10025;&#10025;&#10025;
+                  <span class="catalog__item__count card__count">1000</span>
+                </div>
+              </div>
+            </div>
+            <div class="card__cover">
+              <div class="card__wrap-text">
+                <p class="catalog__item__name card__name">
+                  Synergy Twin Mirror
+                </p>
+                <p lass="catalog__item__brand card__brand">
+                  Scubapro
+                </p>
+              </div>
+              <div class="catalog__item__price card__price">
+                55.40$
+              </div>
+            </div>
+            <div class="add-to-cart">
+              <a href="#" class="btn cart-button">В корзину</a>
+            </div>
+          </li>
+
+          <li class="catalog__item card">
+            <div class="catalog__item__pic card__pic">
+              <a class="card__link">
+                <picture>
+                  <!-- <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"> -->
+                  <img class="catalog__item__img card__img" src="img/snorkels/Jet.jpg"
+                    srcset="img/fins/Avanti Superchannel FF.jpg" width="100" alt="Фон 4">
+                </picture>
+              </a>
+              <div class="catalog__item__estimator card__estimator">
+                <div class="catalog__item__heart card__heart">
+                  <div class="card__heart1"></div>
+                  <div class="card__heart2"></div>
+                </div>
+                <div class="catalog__item__stars card__stars">&#9734;&#10025;&#10025;&#10025;&#10025;
+                  <span class="catalog__item__count card__count">1000</span>
+                </div>
+              </div>
+            </div>
+            <div class="card__cover">
+              <div class="card__wrap-text">
+                <p class="catalog__item__name card__name">
+                  Jet
+                </p>
+                <p lass="catalog__item__brand card__brand">
+                  Seac
+                </p>
+              </div>
+              <div class="catalog__item__price card__price">
+                9.40$
+              </div>
+            </div>
+            <div class="add-to-cart">
+              <a href="#" class="btn cart-button">В корзину</a>
+            </div>
+          </li>
+
         </ul>
-        <!-- @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700|Work+Sans:100,200,300,400,500,600');
-
-:root {
-    --headlinesFont: 'Josefin Sans', sans-serif;
-    --bodyFont: 'Work Sans', sans-serif;
-    --wildWatermelon: #ff4f87;
-    --fuelYellow: #f0a035;
-    --textColor: #323232;
-    --bodyBg: #d6d6d6;
-    --white: #fff;
-    --black: #000;
-}
-
-@mixin poCentering {
-    top: 50%;
-    right: 50%;
-    bottom: 50%;
-    left: 50%;
-    position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-html{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-html, body {
-
-}
-body {
-    background: var(--bodyBg);
-    font-family: var(--bodyFont);
-    color: var(--textColor);
-    line-height: 1.5;
-}
-
-* {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
-img {
-    vertical-align: text-bottom;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.ft-recipe {
-    width: 460px;
-    height: 654px;
-    background: var(--white);
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 88px 0 rgba(0, 0, 0, 0.1607843137254902);
-    overflow: hidden;
-    @include poCentering;
-    .ft-recipe__thumb {
-        position: relative;
-        height: 281px;
-        box-shadow: 0px 0px 130px 0 rgba(0, 0, 0, 0.38);
-        #close-modal {
-            position: absolute;
-            top: 0; right: 0;
-            width: 36px;
-            height: 36px;
-            background: #000;
-            color: var(--white);
-            text-align: center;
-            line-height: 36px;
-            font-size: 22px;
-            cursor: pointer;
-            z-index: 1;
-            transition: all 200ms ease;
-            &:hover {
-                background: transparent;
-                color: var(--black);
-            }
-        }
-        h3 {
-            text-align: center;
-            position: absolute;
-            margin: 0;
-            width: 100%;
-            color: var(--white);
-            font-family: var(--headlinesFont);
-            font-size: 25px;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), transparent);
-            padding: 2.4rem 0 0;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: 50% 50%;
-        }
-    }
-    .ft-recipe__content {
-        flex: 1;
-        padding: 0 2em 1em;
-        .content__header {
-            .row-wrapper {
-                display: flex;
-                padding: .55em 0 .3em;
-                border-bottom: 1px solid #d8d8d8;
-                .recipe-title {
-                    font-family: var(--headlinesFont);
-                    font-weight: 600;
-                }
-                .user-rating {
-
-                }
-            }
-            .recipe-details {
-                display: flex;
-                list-style: none;
-                padding: 1.4em 0 1em;
-                margin: 0;
-                justify-content: space-between;
-                .recipe-details-item {
-                    flex: 1;
-                    i {
-                        font-size: 30px;
-                    }
-                    .value {
-                        color: #ff4f87;
-                        margin-left: .35em;
-                        vertical-align: bottom;
-                        font: {
-                            size: 24px;
-                            weight: 600;
-                        }
-                    }
-                    .title {
-                        display: block;
-                        margin-top: -4px;
-                        font: {
-                            family: var(--headlinesFont);
-                            size: 21px;
-                            weight: 300;
-                        }
-                    }
-                }
-            }
-
-        }
-        .description {
-            margin: .3em 0 1.8em;
-        }
-        .content__footer {
-            text-align: center;
-            margin: 0 3rem;
-            a {
-                font-family: var(--headlinesFont);
-                display: inline-block;
-                background: var(--wildWatermelon);
-                padding: .45em 1em;
-                width: 100%;
-                text-align: center;
-                border-radius: 5px;
-                color: #fff;
-                font-weight: 500;
-                letter-spacing: .2px;
-                font-size: 17px;
-                transition: transform 250ms ease,
-                            box-shadow 250ms ease;
-                &:hover {
-                    transform: translateY(-3px);
-                    box-shadow: 0 10px 34px 0 rgba(255, 79, 135, 0.32);
-                }
-            }
-        }
-    }
-
-}
- -->
-
-        <!-- body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            background: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;   
-            font-family: sans-serif;
-            background-color: #f1f1f1; 
-        }
-        
-        .container {
-            width: 1000px;
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .container .card {
-            position: relative;
-            border-radius: 10px;
-        }
-        
-        .container .card .icon {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #f00;
-            transition: 0.7s;
-            z-index: 1;
-        }
-        
-        .container .card:nth-child(1) .icon {
-            background: #e07768;
-        }
-        
-        .container .card:nth-child(2) .icon {
-            background: #6eadd4;
-        }
-        
-        .container .card:nth-child(3) .icon {
-            background: #4aada9;
-        }
-        
-        
-        .container .card .icon .fa {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 80px;
-            transition: 0.7s;
-            color: #fff;
-        }
-        
-        i {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 80px;
-            transition: 0.7s;
-            color: #fff;
-        }
-        
-        .container .card .face {
-            width: 300px;
-            height: 200px;
-            transition: 0.5s;
-        }
-        
-        .container .card .face.face1 {
-            position: relative;
-            background: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1;
-            transform: translateY(100px);
-        }
-        
-        .container .card:hover .face.face1{
-            background: #ff0057;
-            transform: translateY(0px);
-        }
-        
-        .container .card .face.face1 .content {
-            opacity: 1;
-            transition: 0.5s;
-        }
-        
-        .container .card:hover .face.face1 .content {
-            opacity: 1;
-        }
-        
-        .container .card .face.face1 .content i{
-            max-width: 100px;
-        }
-        
-        .container .card .face.face2 {
-            position: relative;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            box-sizing: border-box;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
-            transform: translateY(-100px);
-        }
-        
-        .container .card:hover .face.face2{
-            transform: translateY(0);
-        }
-        
-        .container .card .face.face2 .content p {
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            color: #414141;
-        }
-        
-        .container .card .face.face2 .content h3 {
-            margin: 0 0 10px 0;
-            padding: 0;
-            color: #fff;
-            font-size: 24px;
-            text-align: center;
-            color: #414141;
-        } 
-        
-        .container a {
-            text-decoration: none;
-            color: #414141;
-        } -->
+ 
 
     </section>
   </main>
+
   <footer class="footer">
+    <div class="footer__wrapper">
     <div class="footer__logo-box">
 
-      <!-- <picture class="footer__logo">
-        <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
-        <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
-      </picture> -->
-      <img class="footer__logo" src="img/logo.svg" alt="Full logo">
+      <div class="footer__logo">
+        <img class="footer__logo-img" src="img/logo_w.svg" alt="Full logo" height="150">
+      </div>
+      <!-- <img class="footer__logo" src="img/logo-green-2x.png" alt="Full logo"> -->
     </div>
-    <div class="footer__wrapper">
-
+    <div class="footer__cover">
       <div class="footer__navigation">
+        <h4 class="footer__main-header">Main manu</h4>
         <ul class="footer__list">
           <li class="footer__item">
             <a href="" class="footer__link">
-              Company
+              Home
             </a>
           </li>
           <li class="footer__item">
@@ -612,58 +479,59 @@ a {
           </li>
           <li class="footer__item">
             <a href="" class="footer__link">
-              Carrers
+              Catalog
             </a>
           </li>
           <li class="footer__item">
             <a href="" class="footer__link">
-              Privacy
+              Cart
             </a>
           </li>
           <li class="footer__item">
             <a href="" class="footer__link">
-              Terms
+              Blog
             </a>
           </li>
         </ul>
       </div>
+
       <div class="footer_social">
-        <ul>
-          <li class="facebook">
-            <a class="social_button" href="#">
+        <h4 class="footer__main-header">Social manu</h4>
+        <ul class="footer__list">
+          <li class="footer__item facebook">
+            <a class="footer__item social_button" href="#">
               <span class="visually_hidden">Фейсбук</span>
             </a>
           </li>
-          <li class="kontakt">
+          <li class="footer__item  kontakt">
             <a class="social_button" href="#">
               <span class="visually_hidden">Контакт</span>
             </a>
           </li>
-          <li class="twitter">
+          <li class="footer__item twitter">
             <a class="social_button" href="#">
               <span class="visually_hidden">Твиттер</span>
             </a>
           </li>
         </ul>
       </div>
-
-      <div class="footer__text">
-        <p class="footer__copyright">
-          Learning course. Student
-          <a href="" class="footer__link">
-            Olga Ventsel.
-          </a>
-          Course name:
-          <a href="" class="footer__link">
-            "Advanced CSS and SASS".
-          </a>
-          Copyright &copy;
-        </p>
-      </div>
+      
     </div>
+    <div class="footer__text">
+      <p class="footer__copyright">
+        Learning course. Student
+        <a href="" class="footer__link">
+          Olga Ventsel.
+        </a>
+        Course name:
+        <a href="" class="footer__link">
+          "Advanced CSS and SASS".
+        </a>
+        Copyright &copy;
+      </p>
     </div>
+  </div>
   </footer>
-
 
 
 </body>
