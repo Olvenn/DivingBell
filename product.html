@@ -20,42 +20,44 @@
         </include>
     </div>
 
-    <svg class="user-nav__icon">
-        <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
-    </svg>
-
     <header class="header">
-        <div class="header__nav-user nav-user">
+        <div class="header__logo">
+            <img class="header__logo-img" src="img/logo_clear.svg" alt="Full logo" height="150">
+        </div>
+
+        <div class="nav-user">
+
             <ul class="nav-user__items">
                 <li class="nav-user__item nav-user__item--search">
-                    search
+                    Search
                 </li>
                 <li class="nav-user__item nav-user__item--logo">
-                    <img class="header__logo" src="img/logo.svg" alt="Full logo">
-                    logo
+                    Logo
                 </li>
                 <li class="nav-user__item nav-user__item--user">
-                    user
+                    User
                 </li>
                 <li class="nav-user__item nav-user__item--cart">
-                    cart
+                    Cart
                 </li>
             </ul>
         </div>
-
-        <div class="header__main-nav main-nav">
+        <nav class="main-nav">
             <ul class="main-nav__items">
                 <li class="main-nav__items main-nav__items-home">
-                    <a href="index.html" class="main-nav__atalog">
-                        Home
-                    </a>
+                    Home
                 </li>
-                <li class="main-nav__items main-nav__items-shop">
+                <li class="main-nav__items main-nav__items-Catalog">
                     <a href="catalog.html" class="main-nav__atalog">
                         Catalog
                     </a>
                 </li>
-                <ul class="subnav__items">
+                <li class="main-nav__items main-nav__items-shop">
+                    <a href="product.html" class="main-nav__atalog">
+                        Product
+                    </a>
+                </li>
+                <ul class="main-nav__subnav subnav__items">
                     <li class="subnav__item">
                         Masks
                     </li>
@@ -66,48 +68,41 @@
                         Snorkels
                     </li>
                 </ul>
-                <li class="main-nav__items main-nav__items-blog">Blog</li>
-                <li class="main-nav__items main-nav__items-logo">logo</li>
+                <li class="main-nav__items main-nav__items-contact">
+                    <a href="contact.html" class="main-nav__login">
+                        Blog
+                    </a>
+                </li>
                 <li class="main-nav__items main-nav__items-contact">
                     <a href="contact.html" class="main-nav__login">
                         Contact
                     </a>
                 </li>
-                <li class="main-nav__items main-nav__items-order">
-                    <a href="order.html" class="main-nav__login">
-                      Order
-                  </a>
-                  </li>
             </ul>
-        </div>
-
-
-        <div class="title">
-            <img src="img/svg/wave.svg" alt="Wave">
-            <h2 class="top-sales__header">
-                Top sales
-            </h2>
-            <img src="img/svg/wave.svg" alt="Wave">
-        </div>
-
+        </nav>
     </header>
 
     <main class="main-product">
         <div class="main-product__wrapper">
-            <ul class="main-product__images">
-                <li class="main-product__image">
-                    <img src="img/fins/Reaction Pro.jpg" alt="Reaction Pro" class="catalog__image">
-                </li>
-                <li class="main-product__image">
-                    <img src="img/fins/Reaction Pro_blue.jpg" alt="Reaction Pro" class="catalog__image">
-                </li>
-                <li class="main-product__image">
-                    <img src="img/fins/Reaction Pro_black.jpg" alt="Reaction Pro" class="catalog__image">
-                </li>
-                <li class="main-product__image">
-                    <img src="img/fins/Reaction Pro_yellow.jpg" alt="Reaction Pro" class="catalog__image">
-                </li>
-            </ul>
+            <div class="main-product__photo photo">
+                    <div class="photo__main">
+                        <img  class="photo__main-img" src="img/fins/Reaction Pro.jpg" alt="Reaction Pro">
+                    </div>
+                    <ul class="photo__slider">
+                        <li class="photo__slider-item">
+                            <img  class="photo__img" src="img/fins/Reaction Pro.jpg" alt="Reaction Pro">
+                        </li>
+                        <li class="photo__slider-item">
+                            <img class="photo__img" src="img/fins/Reaction Pro_blue.jpg" alt="Reaction Pro">
+                        </li>
+                        <li class="photo__slider-item">
+                            <img  class="photo__img" src="img/fins/Reaction Pro_black.jpg" alt="Reaction Pro">
+                        </li>
+                        <li class="photo__slider-item">
+                            <img  class="photo__img" src="img/fins/Reaction Pro_yellow.jpg" alt="Reaction Pro">
+                        </li>
+                    </ul>
+            </div>
 
             <div class="main-product__group">
                 Finns
@@ -198,6 +193,8 @@
                 <button class="main-product__cart btn--primary">Add to cart &rarr;</button>
             </div>
         </div>
+
+
         <div class="main-product__description description">
             <h3 class="description__title">
                 Description
@@ -240,46 +237,68 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__logo-box">
-
-            <!-- <picture class="footer__logo">
-        <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
-        <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
-      </picture> -->
-            <img class="footer__logo" src="img/logo.svg" alt="Full logo">
-        </div>
         <div class="footer__wrapper">
+            <div class="footer__logo-box">
 
-            <div class="footer__navigation">
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="" class="footer__link">
-                            Company
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="" class="footer__link">
-                            Contact us
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="" class="footer__link">
-                            Carrers
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="" class="footer__link">
-                            Privacy
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="" class="footer__link">
-                            Terms
-                        </a>
-                    </li>
-                </ul>
+                <div class="footer__logo">
+                    <img class="footer__logo-img" src="img/logo_w.svg" alt="Full logo" height="150">
+                </div>
+                <!-- <img class="footer__logo" src="img/logo-green-2x.png" alt="Full logo"> -->
             </div>
+            <div class="footer__cover">
+                <div class="footer__navigation">
+                    <h4 class="footer__main-header">Main manu</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Contact us
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Catalog
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Cart
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="footer_social">
+                    <h4 class="footer__main-header">Social manu</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item facebook">
+                            <a class="footer__item social_button" href="#">
+                                <span class="visually_hidden">Фейсбук</span>
+                            </a>
+                        </li>
+                        <li class="footer__item  kontakt">
+                            <a class="social_button" href="#">
+                                <span class="visually_hidden">Контакт</span>
+                            </a>
+                        </li>
+                        <li class="footer__item twitter">
+                            <a class="social_button" href="#">
+                                <span class="visually_hidden">Твиттер</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
             <div class="footer__text">
                 <p class="footer__copyright">
                     Learning course. Student
@@ -294,7 +313,6 @@
                 </p>
             </div>
         </div>
-        </div>
     </footer>
 </body>
 
@@ -305,14 +323,14 @@
         Close
     </span>
     <div class="cart__product">
-    <div class="cart__image">
-        <img src="img/fins/Reaction Pro_black.jpg" alt="Reaction Pro" class="catalog__image">
-    </div>
-    <p class="cart__price">
-        $ <span>
-            23
-        </span>
-    </p>
+        <div class="cart__image">
+            <img src="img/fins/Reaction Pro_black.jpg" alt="Reaction Pro" class="catalog__image">
+        </div>
+        <p class="cart__price">
+            $ <span>
+                23
+            </span>
+        </p>
     </div>
     <div class="cart__quantity">
         <h4 class="cart__quantity-name">

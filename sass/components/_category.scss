@@ -1,9 +1,13 @@
 .category {
-    max-width: 1980px;
+    /* max-width: 1980px; */
+    width: 100%;
     margin: 0 auto;
-
+    background: $color-primary;
+    background-size: 200px;
+    /* margin: 50px auto; */
 
     &__items {
+        padding: 50px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -11,16 +15,16 @@
 
     &__item {
         max-width: 17%;
-        min-width: 350px;
+        min-width: 300px;
         margin: 1.5rem;
         border-radius: 10px;
         box-shadow: 0 5px 25px  #678baf; 
-        border: 2px solid #fff;
+        /* border: 2px solid #fff; */
         position: relative;
         transition: all 1s;
 
         &:hover {
-            border: 5px solid #fff;
+            /* border: 5px solid #fff; */
             transform: scale(1.05) translateY(-0.5rem);
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
