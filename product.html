@@ -86,8 +86,12 @@
         <div class="main-product__wrapper">
             <div class="main-product__photo photo">
                     <div class="photo__main">
+                        <div class="photo__wrapper-img">
                         <img  class="photo__main-img" src="img/fins/Reaction Pro.jpg" alt="Reaction Pro">
+                        </div>
                     </div>
+                    <div class="photo__wrapper">
+                        <div class="photo__arrow photo__arrow--top"></div>
                     <ul class="photo__slider">
                         <li class="photo__slider-item">
                             <img  class="photo__img" src="img/fins/Reaction Pro.jpg" alt="Reaction Pro">
@@ -102,6 +106,9 @@
                             <img  class="photo__img" src="img/fins/Reaction Pro_yellow.jpg" alt="Reaction Pro">
                         </li>
                     </ul>
+                    <div class="photo__arrow photo__arrow--bottom"></div>
+                </div>
+
             </div>
 
             <div class="main-product__group">
@@ -314,6 +321,21 @@
             </div>
         </div>
     </footer>
+
+
+
+
+
+    <script src="js/sliderCarousel.js"></script>
+    <script>
+        const optionsSlider =  {
+            wrap: ".photo__wrapper",
+            slider: ".photo__slider",
+
+        }
+        const carousel = new SliderCarousel(optionsSlider);
+        carousel.init();
+    </script>
 </body>
 
 </html>
