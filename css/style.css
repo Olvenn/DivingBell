@@ -1585,7 +1585,10 @@ footer {
   display: flex;
   width: 850px;
   height: 700px;
-  box-shadow: 0 -20px 20px -20px #36628d, 0 20px 20px -20px #36628d, 20px 0 20px -20px #36628d, -20px 0 20px -20px #36628d; }
+  box-shadow: 0 -20px 20px -20px #36628d, 0 20px 20px -20px #36628d, 20px 0 20px -20px #36628d, -20px 0 20px -20px #36628d;
+  /* border: 1px solid black;
+    
+  background-color: green; */ }
   .photo__wrapper {
     width: 200px;
     position: relative; }
@@ -1639,7 +1642,9 @@ footer {
 .header {
   margin: 0 auto;
   width: 100vw;
-  position: relative; }
+  position: relative;
+  box-shadow: inset 0 30px 30px -20px #28323c;
+  box-shadow: inset 0px 0px 20px #28323c; }
 
 .header__logo {
   border-radius: 30%;
@@ -2071,6 +2076,8 @@ footer {
 .main-product {
   background-color: #fff; }
   .main-product__wrapper {
+    display: flex;
     max-width: 1200px;
     width: 1000px;
-    margin: 0 auto; }
+    /* margin: 0 auto;    */
+    margin-top: 40px; }
