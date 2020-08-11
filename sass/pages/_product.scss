@@ -1,12 +1,13 @@
 .main-product {
     background-color: #fff;
-
+    margin-top: 150px;
 
     &__wrapper {
+        max-width: 1960px;
         display: flex;
-        max-width: 1200px;
-        width: 1000px;
-        /* margin: 0 auto;    */
+        justify-content: space-around;
+
+        margin: 0 auto;
         margin-top: 40px;
     }
 }
