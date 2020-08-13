@@ -2,13 +2,24 @@
     background-color: #fff;
     margin-top: 150px;
 
+
     &__wrapper {
         max-width: 1960px;
+        width: 1960px;
         display: flex;
         justify-content: space-around;
 
         margin: 0 auto;
         margin-top: 40px;
     }
+
+    &__photo {
+        width: 900px;
+    }
+
+    &__description {
+        width: 900px;
+    }
 }
+
 

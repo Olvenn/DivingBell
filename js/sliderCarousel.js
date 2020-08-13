@@ -9,10 +9,10 @@ class SliderCarousel {
         slider,
         next,
         prev,
-        heighItem = 150,
+        heighItem = 100,
         heighPadding = 10,
         position = 0,
-        slidersToShow = 2}) {
+        slidersToShow = 3}) {
 
         this.wrap = document.querySelector(wrap);
         this.slider = document.querySelector(slider);
@@ -32,6 +32,7 @@ class SliderCarousel {
     }
 
     init() {
+        this.next.style.opacity = 0.2;
         this.addMySliderClass();
         this.addMySliderStyle();
 
@@ -52,6 +53,7 @@ class SliderCarousel {
         for (const item of this.slides) {
             item.classList.add("my-slider__item");
         }
+
     }
 
     addMySliderStyle() {
@@ -104,7 +106,15 @@ class SliderCarousel {
         if(this.options.position < this.slides.length - this.slidersToShow) {
  
             ++this.options.position;
-            console.log(this.options.position);
+            if(this.options.position > 0) {
+                this.next.style.opacity = 1;
+            } 
+            if(this.options.position == this.options.slidesLength) {
+                this.prev.style.opacity = .2;
+            } else {
+                this.prev.style.opacity = 1;
+            }
+
 
         let offset = this.options.itemHeight * this.options.position;
 
@@ -113,16 +123,24 @@ class SliderCarousel {
     }
 
     nextSlider() {
-
         if(this.options.position > 0) {
         --this.options.position;
+        if(this.options.position < this.options.slidesLength) {
+            this.prev.style.opacity = 1;
+        } 
+
+        if(this.options.position > 0) {
+            this.next.style.opacity = 1;
+        }
+        else {
+            this.next.style.opacity = .2;
+        }
         let offset = this.options.itemHeight * this.options.position;
         this.slider.style.transform = `translateY(-${offset}px)`;
 
         console.log(this.options.position)
         }
     }
-
 
     addArrow() {
 
