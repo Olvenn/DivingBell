@@ -1,3 +1,18 @@
-.description {
-    
+.main-product {
+    padding: 20px;
+
+
+    &__title {
+        font-family: "Avenir Next Regular";
+        font-size: 30px;
+        color: $color-primary;
+    }
+
+    &__price,
+    &__name {
+        font-size: 22px;
+        margin-top: 20px;
+        font-family: 'Avenir Medium';
+    }
+
 }
