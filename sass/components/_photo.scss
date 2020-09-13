@@ -1,6 +1,6 @@
 .photo {
     display: flex;
-    height: 700px;
+    height: 600px;
     box-shadow:  0 -20px 20px -20px $color-primary-dark, 0 20px 20px -20px $color-primary-dark, 20px 0 20px -20px $color-primary-dark, -20px 0 20px -20px $color-primary-dark;
 
      &__wrapper {
@@ -13,13 +13,13 @@
    }
 
     &__main {
-        width: 700px;
+        width: 760px;
         position: relative;
         padding: 10px;
         box-shadow:   20px 0 20px -20px $color-primary-dark;
         
         &-img {
-           height: 630px;
+           height: 530px;
             width: auto;
         }
     }

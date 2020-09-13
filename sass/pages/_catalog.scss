@@ -1,11 +1,31 @@
 .catalog {
     background-color: #fff;
 
-    &__items {
+        &__items {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
+
+}
+
+.legend_title {
+    color: red;
+}
+
+label input[type=checkbox] {
+
+	position: absolute;
+
+	z-index: -1;
+
+	opacity: 0;
+
+	display: block;
+
+	width: 0;
+
+	height: 0;
 
 }

@@ -1,0 +1,36 @@
+.size {
+    display: flex;
+
+    &__input {
+        display: none;
+    }
+
+    &__lable {
+    color: #000;
+    cursor: pointer;
+    line-height: 30px;
+    padding: 10px 20px;
+    vertical-align: middle;
+    }
+
+    &__label:before {
+        content: " ";
+        display: inline-block;
+        margin-right: 15px;
+        position: relative;
+        text-align: center;
+        text-indent: 0px;
+        width: 30px;
+        height: 30px;
+        /* background: rgb(112, 17, 17); */
+        border: 1px solid black;
+        vertical-align: middle;
+      }
+
+
+    &__input:checked + label {
+
+        /* background: #ffe0a6; */
+    
+    }
+}
